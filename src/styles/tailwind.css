@@ -1,0 +1,126 @@
+@import 'tailwindcss';
+
+
+
+@theme {
+  /************************** PRIMITIVES *****************************/
+
+  /* Fonts */
+  --font-*: initial;
+  --font-serif: "Poppins", system-ui, sans-serif;
+    --font-sans: "Poppins", system-ui, sans-serif;
+
+  /* Colors */
+
+  --color-*: initial;
+  --color-dark-50: #817D82;
+  --color-dark-60: #4F4C52;
+  --color-dark-70: #262528;
+  --color-dark-80: #1C1B1D;
+  --color-dark-90: #141314;
+
+--color-light-10: #FFFFFF;
+  --color-light-20: #E5E1E3;
+  --color-light-35: #CBC5C8;
+
+
+--color-berry-35: #F199CD;
+  --color-berry-50: #FF66C4;
+  --color-berry-80: #601148;
+
+ /****************************** TOKENS ******************************/
+
+  /* Text */
+  /*Clamp generator: https://utopia.fyi/clamp/calculator?a=470,1400,14%E2%80%9416 */
+
+  --text-*: initial;
+--text-heading-display: clamp(4rem, 2.8678rem + 4.6448vw, 7.1875rem);
+--text-heading-large: clamp(2.25rem, 1.806rem + 1.8215vw, 3.5rem);
+--text-heading-medium: clamp(1.875rem, 1.4754rem + 1.6393vw, 3rem);
+
+
+  /* Background color */
+  --color-background-primary: var(--color-dark-90);
+  --color-background-secondary: var(--color-dark-80);
+  --color-background-tertiary: var(--color-light-10);
+  --color-background-brand-primary: var(--color-brand-50);
+  --color-background-brand-secondary: var(--color-brand-80);
+  --color-background-brand-tertiary: var(--color-berry-35);
+  
+ /* Border color */
+  --color-border-primary: var(--color-dark-60);
+  --color-border-secondary: var(--color-light-90);
+--color-border-brand: var(--color-berry-35);
+
+  /* Text color */
+  --color-text-primary: var(--color-light-20);
+  --color-text-secondary: var(--color-light-35);
+  --color-text-alternate: var(--color-light-10);
+ 
+
+}
+
+@layer utilities{
+  .heading-display {
+    @apply text-heading-display  leading-tight font-medium text-text-primary;
+  }
+  .heading-large {
+    @apply text-heading-large leading-tight font-medium text-text-primary;
+  }
+  .heading-medium {
+    @apply text-heading-medium leading-tight font-medium text-text-primary;
+  }
+   .body-large {
+    @apply text-xl leading-[150%] text-text-secondary;
+  }
+   .body-base {
+    @apply text-base leading-[150%] text-text-secondary;
+  }
+    .body-small {
+    @apply text-sm font-normal leading-[150%] text-text-secondary;
+  }
+   .body-tiny {
+    @apply text-xs  font-normal leading-[150%] text-text-secondary;
+  }
+
+
+
+ .section-main {
+    @apply py-16 sm:py-24 lg:py-32;
+  }
+
+}
+
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@layer components{
+ body {
+    font-family: var(--font-sans);
+    background-color: var(--color-background-primary);
+    display: grid;
+    grid-template-columns: [full-start] minmax(1rem, 1fr) [content-start] minmax(0, var(--content-width)) [content-end] minmax(1rem, 1fr) [full-end];
+    grid-template-rows: auto 1fr auto;
+    column-gap: 0;
+    align-content: start;
+
+    > :is(header, main, footer) {
+      grid-column: full;
+      display: grid;
+      grid-template-columns: subgrid;
+      align-content: start;
+
+      > * {
+        grid-column: content;
+      }
+    }
+  } 
+}
