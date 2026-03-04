@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-
+@tailwind utilities;
 
 @theme {
   /************************** PRIMITIVES *****************************/
@@ -38,30 +38,50 @@
 --text-heading-large: clamp(2.25rem, 1.806rem + 1.8215vw, 3.5rem);
 --text-heading-medium: clamp(1.875rem, 1.4754rem + 1.6393vw, 3rem);
 
+  --text-body-large: clamp(1.125rem, 1.0886rem + 0.1495vw, 1.25rem);
+    --text-body-base: clamp(0.875rem, 0.8386rem + 0.1495vw, 1rem);
+    --text-body-small: clamp(0.75rem, 0.7136rem + 0.1495vw, 0.875rem);
+--text-body-tiny: clamp(0.625rem, 0.5886rem + 0.1495vw, 0.75rem);
+  
+
+
 
   /* Background color */
   --color-background-primary: var(--color-dark-90);
   --color-background-secondary: var(--color-dark-80);
-  --color-background-tertiary: var(--color-light-10);
-  --color-background-brand-primary: var(--color-brand-50);
-  --color-background-brand-secondary: var(--color-brand-80);
+   --color-background-tertiary: var(--color-dark-60);
+  --color-background-alternate: var(--color-light-20);
+  --color-background-brand-primary: var(--color-berry-50);
+  --color-background-brand-secondary: var(--color-berry-80);
   --color-background-brand-tertiary: var(--color-berry-35);
   
  /* Border color */
   --color-border-primary: var(--color-dark-60);
-  --color-border-secondary: var(--color-light-90);
+  --color-border-secondary: var(--color-light-20);
 --color-border-brand: var(--color-berry-35);
 
   /* Text color */
   --color-text-primary: var(--color-light-20);
   --color-text-secondary: var(--color-light-35);
-  --color-text-alternate: var(--color-light-10);
+  --color-text-tertiary: var(--color-light-10);
+   --color-text-alternate: var(--color-dark-90);
+    --color-text-brand-dark: var(--color-berry-80);
+     --color-text-brand-light: var(--color-berry-35);
  
+
 
 }
 
+
+  
+
+
+
 @layer utilities{
-  .heading-display {
+  body {
+    background-color: var(--color-background-primary);
+  } 
+.heading-display {
     @apply text-heading-display  leading-tight font-medium text-text-primary;
   }
   .heading-large {
@@ -71,16 +91,16 @@
     @apply text-heading-medium leading-tight font-medium text-text-primary;
   }
    .body-large {
-    @apply text-xl leading-[150%] text-text-secondary;
+    @apply text-body-large leading-[150%] text-text-secondary;
   }
    .body-base {
-    @apply text-base leading-[150%] text-text-secondary;
+    @apply text-body-base leading-[150%] ;
   }
     .body-small {
-    @apply text-sm font-normal leading-[150%] text-text-secondary;
+    @apply text-body-small font-normal leading-[150%] text-text-secondary;
   }
    .body-tiny {
-    @apply text-xs  font-normal leading-[150%] text-text-secondary;
+    @apply  text-body-tiny font-normal leading-[150%] text-text-secondary;
   }
 
 
@@ -88,39 +108,17 @@
  .section-main {
     @apply py-16 sm:py-24 lg:py-32;
   }
-
 }
 
 
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
+  
+
+
+
 }
 
 @layer components{
- body {
-    font-family: var(--font-sans);
-    background-color: var(--color-background-primary);
-    display: grid;
-    grid-template-columns: [full-start] minmax(1rem, 1fr) [content-start] minmax(0, var(--content-width)) [content-end] minmax(1rem, 1fr) [full-end];
-    grid-template-rows: auto 1fr auto;
-    column-gap: 0;
-    align-content: start;
 
-    > :is(header, main, footer) {
-      grid-column: full;
-      display: grid;
-      grid-template-columns: subgrid;
-      align-content: start;
-
-      > * {
-        grid-column: content;
-      }
-    }
-  } 
 }
+
