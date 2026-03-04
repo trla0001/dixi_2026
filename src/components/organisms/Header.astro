@@ -1,5 +1,5 @@
 ---
-import Link from "../components/Link.astro";
+import Link from "../atoms/Link.astro";
 ---
 
 <div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full bg-slate-200">
@@ -9,7 +9,7 @@ import Link from "../components/Link.astro";
     </div>
     <nav id="desktopmenu" class="hidden lg:block">
       <ul class="flex flex-row gap-4">
-        <li class=""><Link href="#">Københavnerbilleder</Link></li><!-- alternativt: lav et <a href="">Link</a>, hvis du ikke vil bruge Link.astro komponenten -->
+        <li class=""><Link href="#">Københavnerbilleder</Link></li>
         <li class=""><Link href="#">Bogens indhold</Link></li>
         <li class=""><Link href="#">Forfatteren</Link></li>
         <li class=""><Link href="#">Køb nu</Link></li>
