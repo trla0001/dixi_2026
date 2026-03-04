@@ -1,20 +1,21 @@
 ---
 // Henter parametrene fra Astro.props
-const { href = "#", target = "_self", variant = "textlink", size = "standard" } = Astro.props;
+const { href = "#", target = "_self", variant = "", size = "" } = Astro.props;
 
 const linkStyling = "";
 
 const variantClasses = {
-  primary: "bg-sky-800 text-white hover:bg-sky-600",
-  secondary: "border-2 bg-white border-black text-black hover:border-sky-600 hover:text-sky-600",
-  textlink: "text-sky-800 hover:text-sky-600 ",
+  ButtonPrimary: "rounded-full body-base text-text-brand-dark hover:text-text-brand-light bg-background-brand-primary hover:bg-background-brand-secondary focus:outline-2 focus:focus:outline-border-brand",
+  ButtonSecondary: "rounded-full body-base text-text-primary outline outline-border-primary hover:bg-background-secondary focus:outline-2 focus:focus:outline-border-primary",
+  ButtonInverted: "rounded-full body-base text-text-alternate hover:text-text-primary bg-background-alternate hover:bg-transparent hover:outline hover:outline-border-secondary focus:outline-2",
+  NavLink: "body-base text-text-primary no-underlin hover:underline  hover:decoration-border-brand hover:underline-offset-24 focus:outline-2 focus:focus:outline-border-secondary",
 };
 
 const sizeClasses = {
-  large: "p-4",
-  medium: "p-3",
-  small: "p-2",
+  large: "py-3 px-7",
+  medium: "py-2 px-6",
+  base: "py-6",
 };
 ---
 
-<a href={href} class="underline" target={target} class:list={[linkStyling, variantClasses[variant], sizeClasses[size]]}><slot /></a>
+<a href={href} class="" target={target} class:list={[linkStyling, variantClasses[variant], sizeClasses[size]]}><slot /></a>
