@@ -28,7 +28,7 @@ import closeIcon from "../../assets/svg/close.svg";
     <Image src={closeIcon} alt="Luk menu" class="w-6 h-6"/>
   </template></button>
   </div>
-  <nav id="mobilmenu" class="flex flex-col content-center py-4 md:py-6" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+  <nav id="mobilmenu" class="flex flex-col content-center py-4 md:py-6 lg:hidden" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
     <ul>
       <li class="text-end pb-2"><Link href="/frivillig" variant="NavLink" size="base">Frivillig hos Dixi</Link></li>
       <li class="text-end pb-2"><Link href="/omos" variant="NavLink" size="base">Om os</Link></li>
