@@ -4,6 +4,7 @@ import Button from '../components/atoms/Button.astro';
 import Link from '../components/atoms/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
+import CTABanner from "../components/organisms/CTABanner.astro";
 ---
 
 
@@ -11,9 +12,10 @@ import thumbsup from "../assets/images/thumbsup.png";
 
 	<article>
 		<h1 class="body-base">Index overskrift</h1>
-		<Link variant = "ButtonInverted" size ="large">Klik!</Button>
+		<Link variant = "ButtonInverted" size ="large">Klik!</Link>
 		<p class="py-20"><Link variant = "NavLink" size ="base" href="" target="_blank">Link til En anden side</Link></p>
 	</article>
 	<section>
 	</section>
+	<CTABanner></CTABanner>
 </MainLayout>
