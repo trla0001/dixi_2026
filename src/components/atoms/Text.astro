@@ -1,5 +1,16 @@
 ---
+import Link from '../atoms/Link.astro';
 
+const { overskrift = "", text_1 = "", text_2 = "", text_3 = "", text_4 = "", text_5 = "", cta = "" } = Astro.props;
 ---
 
-<div>Text</div>
+<article>
+    <h2 class="heading-large pb-6 md:pb-8">{overskrift}</h2>
+  <p class="body-base pb-2 md:pb-4 text-text-secondary">{text_1}</p>
+  <p class="body-base pb-2 md:pb-4 text-text-secondary">{text_2}</p>
+  <p class="body-base pb-2 md:pb-4 text-text-secondary">{text_3}</p>
+  <p class="body-base pb-2 md:pb-4 text-text-secondary">{text_4}</p>
+  <p class="body-base pb-8 md:pb-12 text-text-secondary">{text_5}</p>
+    <Link variant = "ButtonSecondary" size ="large">{cta}</Link>
+   
+</article>
