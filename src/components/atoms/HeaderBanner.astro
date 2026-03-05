@@ -1,5 +1,9 @@
 ---
-
+import { Image } from 'astro:assets';
+import arrow from "../../assets/svg/arrow_without_stroke.svg";
 ---
 
-<div>Text</div>
+<a class="bg-background-brand-secondary flex flex-row justify-center items-center gap-2 md:gap-4 py-1 md:py-2" href="#" target = "_self">
+    <p class="body-small text-text-brand-light">Tilmeldingen er åben! Bliv en del af DIXI RF26</p>
+ <Image src={arrow} alt="Billede af en pil" class="w-3 md:w-3.5" />
+</a>
