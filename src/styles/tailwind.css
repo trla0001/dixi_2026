@@ -97,7 +97,7 @@
     @apply text-body-base leading-[150%] ;
   }
     .body-small {
-    @apply text-body-small font-normal leading-[150%] text-text-secondary;
+    @apply text-body-small font-normal leading-[150%];
   }
    .body-tiny {
     @apply  text-body-tiny font-normal leading-[150%] text-text-secondary;
