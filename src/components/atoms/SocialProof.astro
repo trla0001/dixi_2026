@@ -1,5 +1,8 @@
 ---
-
+const { tal = "", text = ""} = Astro.props;
 ---
 
-<div>Text</div>
+<div>
+    <h3 class="heading-medium pb-1 md:pb-4">{tal}</h3>
+  <p class="body-base text-text-secondary">{text}</p>
+</div>
