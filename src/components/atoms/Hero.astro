@@ -1,5 +1,11 @@
 ---
+const { overskrift = "", bgImage = "" } = Astro.props;
 
+const bgImagePath = `src/assets/images/${bgImage}.png`;
 ---
+<section
+  style={`background-image: url('${bgImagePath}');`}
+  class="min-h-103 md:min-h-138 h-[48vh] bg-cover flex">
+  <h1 class="heading-display p-6 md:p-30 self-end">{overskrift}</h1>
+</section>
 
-<div>Text</div>
