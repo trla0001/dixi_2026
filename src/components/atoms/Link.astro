@@ -5,10 +5,10 @@ const { href = "#", target = "_self", variant = "", size = "" } = Astro.props;
 const linkStyling = "";
 
 const variantClasses = {
-  ButtonPrimary: "rounded-full body-base text-text-brand-dark hover:text-text-brand-light bg-background-brand-primary hover:bg-background-brand-secondary focus:outline-2 focus:focus:outline-border-brand",
-  ButtonSecondary: "rounded-full body-base text-text-primary outline outline-border-primary hover:bg-background-secondary focus:outline-2 focus:focus:outline-border-primary",
-  ButtonInverted: "rounded-full body-base text-text-alternate hover:text-text-primary bg-background-alternate hover:bg-transparent hover:outline hover:outline-border-secondary focus:outline-2",
-  NavLink: "body-base text-text-primary no-underlin hover:underline  hover:decoration-border-brand hover:underline-offset-24 focus:outline-2 focus:focus:outline-border-secondary",
+  ButtonPrimary: "block text-center rounded-full body-base text-text-brand-dark hover:text-text-brand-light bg-background-brand-primary hover:bg-background-brand-secondary focus:outline-2 focus:focus:outline-border-brand",
+  ButtonSecondary: "text-center rounded-full body-base text-text-primary outline outline-border-primary hover:bg-background-secondary focus:outline-2 focus:focus:outline-border-primary",
+  ButtonInverted: "text-center rounded-full body-base text-text-alternate hover:text-text-primary bg-background-alternate hover:bg-transparent hover:outline hover:outline-border-secondary focus:outline-2",
+  NavLink: "block body-base text-text-primary no-underlin hover:border-b  hover:border-border-brand focus:outline-2 focus:focus:outline-border-secondary",
 };
 
 const sizeClasses = {
