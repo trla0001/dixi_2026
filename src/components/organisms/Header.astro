@@ -10,14 +10,14 @@ import closeIcon from "../../assets/svg/close.svg";
 <div x-data="{ showmenu: false }" class="px-6 md:px-8 py-2 md:py-0 fixed w-full bg-background-secondary">
   <div id="navbar" class="flex flex-row justify-between items-center">
     <div id="logo" class="">
-      <a href="#link1"><Image src={logo} alt="A bird sitting on a nest of eggs." class="w-26 h-auto" /></a>
+      <a href="/"><Image src={logo} alt="A bird sitting on a nest of eggs." class="w-26 h-auto" /></a>
     </div>
     <nav id="desktopmenu" class="hidden lg:flex lg:items-center gap-8">
       <ul class="flex flex-row gap-8">
-        <li class=""><Link href="#" variant="NavLink" size="base">Frivillig hos Dixi</Link></li>
-        <li class=""><Link href="#" variant="NavLink" size="base">Om os</Link></li>
-        <li class=""><Link href="#" variant="NavLink" size="base">Vores menu</Link></li>
-        <li class=""><Link href="#" variant="NavLink" size="base">Kontakt os</Link></li>
+        <li class=""><Link href="/frivillig" variant="NavLink" size="base">Frivillig hos Dixi</Link></li>
+        <li class=""><Link href="/omos" variant="NavLink" size="base">Om os</Link></li>
+        <li class=""><Link href="/menu" variant="NavLink" size="base">Vores menu</Link></li>
+        <li class=""><Link href="/kontakt" variant="NavLink" size="base">Kontakt os</Link></li>
       </ul>
         <div class=""><Link href="#" variant="ButtonPrimary" size="medium">Tilmeld dig</Link></div>
     </nav>
@@ -30,10 +30,10 @@ import closeIcon from "../../assets/svg/close.svg";
   </div>
   <nav id="mobilmenu" class="flex flex-col content-center py-4 md:py-6" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
     <ul>
-      <li class="text-end "><Link href="#" variant="NavLink" size="base">Frivillig hos Dixi</Link></li>
-      <li class="text-end "><Link href="#" variant="NavLink" size="base">Om os</Link></li>
-      <li class="text-end "><Link href="#" variant="NavLink" size="base">Vores menu</Link></li>
-      <li class="text-end "><Link href="#" variant="NavLink" size="base">Kontakt os</Link></li>
+      <li class="text-end "><Link href="/frivillig" variant="NavLink" size="base">Frivillig hos Dixi</Link></li>
+      <li class="text-end "><Link href="/omos" variant="NavLink" size="base">Om os</Link></li>
+      <li class="text-end "><Link href="/menu" variant="NavLink" size="base">Vores menu</Link></li>
+      <li class="text-end "><Link href="/kontakt" variant="NavLink" size="base">Kontakt os</Link></li>
     </ul>
     <div class=""><Link href="#" variant="ButtonPrimary" size="medium" >Tilmeld dig</Link></div>
   </nav>
