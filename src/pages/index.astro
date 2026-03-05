@@ -2,7 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/atoms/Button.astro';
 import Text from '../components/atoms/Text.astro';
-import SocialProof from '../components/atoms/SocialProof.astro';
+import Accordion from '../components/atoms/Accordion.astro';
 import Link from '../components/atoms/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
@@ -17,6 +17,6 @@ import thumbsup from "../assets/images/thumbsup.png";
 		<p class="py-20"><Link variant = "NavLink" size ="base" href="" target="_blank">Link til En anden side</Link></p>
 	</article>
 	<section>
-	<SocialProof tal="300" text="Hello"></SocialProof>
+	<Accordion></Accordion>
 	</section>
 </MainLayout>
