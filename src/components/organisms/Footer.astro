@@ -1,6 +1,30 @@
 ---
+import Link from "../atoms/Link.astro";
+
+import { Image } from 'astro:assets';
+import facebook from "../../assets/svg/facebook.svg";
+import instagram from "../../assets/svg/instagram.svg";
+import logo from "../../assets/svg/logo.svg";
 ---
-<div>
-<p>Footer - tilføj footerindhold</p>
-</div>
-  
+
+
+
+<footer class="section-main bg-background-secondary">
+	<div class="pb-20 md:pb-30 md:flex md:flex-row justify-between items-center">
+      <ul class="pb-12 md:pb-0 md:flex md:flex-row md:gap-8">
+        <li><Link href="/" variant="NavLink" size="base">Frivillig hos Dixi</Link></li>
+        <li><Link href="/" variant="NavLink" size="base">Om os</Link></li>
+        <li><Link href="/" variant="NavLink" size="base">Vores menu</Link></li>
+        <li><Link href="/" variant="NavLink" size="base">Kontakt os</Link></li>
+      </ul>
+     <ul class="md:flex md:flex-row md:gap-8">
+        <li class="pb-6 md:pb-0 "><a href="https://www.facebook.com/DixiBurgerRF/" target="_blank"><Image src={facebook} alt="Facebook ikon"/></a></li>
+        <li><a href="https://www.instagram.com/dixi.burger?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><Image src={instagram} alt="Instagram ikon"/></a></li>
+      </ul>
+    </div>
+    <div class="pb-6 md:pb-0"><Image src={logo} alt="Dixi Burger logo"/></div>
+     <ul class="md:flex md:flex-row justify-between items-center">
+        <li class="pb-6 md:pb-0 "><Link href="/" variant="NavLink" size="base">Cookie- og Privatlivspolitik</Link></li>
+        <li><Link href="/" variant="NavLink" size="base">Copyright © Dixi Burger 2026</Link></li>
+      </ul>
+</footer>
