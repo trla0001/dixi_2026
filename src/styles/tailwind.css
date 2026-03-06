@@ -36,7 +36,7 @@
   --text-*: initial;
 --text-heading-display: clamp(4rem, 2.8678rem + 4.6448vw, 7.1875rem);
 --text-heading-large: clamp(2.25rem, 1.806rem + 1.8215vw, 3.5rem);
---text-heading-medium: clamp(1.875rem, 1.4754rem + 1.6393vw, 3rem);
+--text-heading-medium: clamp(1.5rem, 1.0628rem + 1.7937vw, 3rem);
 
   --text-body-large: clamp(1.125rem, 1.0886rem + 0.1495vw, 1.25rem);
     --text-body-base: clamp(0.875rem, 0.8386rem + 0.1495vw, 1rem);
@@ -106,7 +106,7 @@
 
 
  .section-main {
-    @apply px-6 py-12 md:px-24 md:py-24 lg:px-30 lg:py-30;
+    @apply px-6 py-12 md:px-6 md:py-20 lg:px-30 lg:py-30;
   }
 }
 
