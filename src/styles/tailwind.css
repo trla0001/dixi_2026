@@ -88,7 +88,7 @@
     @apply font-serif text-heading-large leading-none font-medium text-text-primary;
   }
   .heading-medium {
-    @apply font-sans text-heading-medium leading-none font-medium text-text-primary;
+    @apply font-sans text-heading-medium leading-none font-medium;
   }
    .body-large {
     @apply font-sans text-body-large leading-normal text-text-secondary;
