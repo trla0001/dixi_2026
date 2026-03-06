@@ -7,8 +7,8 @@
 
   /* Fonts */
   --font-*: initial;
-  --font-serif: "Poppins", system-ui, sans-serif;
-    --font-sans: "Poppins", system-ui, sans-serif;
+  --font-serif: "Literata", serif;
+    --font-sans: "Inter", system-ui, sans-serif;
 
   /* Colors */
 
@@ -82,31 +82,31 @@
     background-color: var(--color-background-primary);
   } 
 .heading-display {
-    @apply text-heading-display  leading-tight font-medium text-text-primary;
+    @apply font-serif text-heading-display  leading-none font-medium text-text-primary;
   }
   .heading-large {
-    @apply text-heading-large leading-tight font-medium text-text-primary;
+    @apply font-serif text-heading-large leading-none font-medium text-text-primary;
   }
   .heading-medium {
-    @apply text-heading-medium leading-tight font-medium text-text-primary;
+    @apply font-sans text-heading-medium leading-none font-medium text-text-primary;
   }
    .body-large {
-    @apply text-body-large leading-[150%] text-text-secondary;
+    @apply font-sans text-body-large leading-normal text-text-secondary;
   }
    .body-base {
-    @apply text-body-base leading-[150%] ;
+    @apply font-sans text-body-base leading-normal ;
   }
     .body-small {
-    @apply text-body-small font-normal leading-[150%];
+    @apply font-sans text-body-small font-normal leading-normal;
   }
    .body-tiny {
-    @apply  text-body-tiny font-normal leading-[150%] text-text-secondary;
+    @apply font-sans text-body-tiny font-normal leading-normal text-text-secondary;
   }
 
 
 
  .section-main {
-    @apply py-16 sm:py-24 lg:py-32;
+    @apply py-16 sm:py-24 lg:py-30;
   }
 }
 
