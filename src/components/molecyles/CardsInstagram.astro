@@ -1,14 +1,18 @@
 ---
 import { Image } from 'astro:assets';
 import instagram from "../../assets/svg/instagram.svg";
-import betjening from "../../assets/images/forside/betjening.webp";
+
+
+const { img, href } = Astro.props;
 ---
 
-<a href="" class="group relative">
+<a href={href} target="_blank" class="group relative">
 <Image src={instagram} alt="Instagram ikon" class="absolute top-4 right-4 z-10 md:top-6 md:right-6 
-              transition-transform duration-400 ease-out
-              group-hover:-translate-x-[calc(50vw-50%)]
-              group-hover:translate-y-[calc(50vh-50%)]" />
+              transition-transform duration-800 ease-out
 
- <Image src={betjening} alt="Billede af en pil" class="object-cover w-full h-full rounded-sm md:rounded-lg transition duration-400 group-hover:brightness-50"  />
+             group-hover:translate-x-[-1000%]
+             group-hover:-translate-y-full" />
+
+ <Image src={img} alt="Instagram billeder" width={600}
+  height={600} class="object-cover w-full h-full rounded-sm md:rounded-lg transition duration-400 group-hover:brightness-50"  />
 </a>
