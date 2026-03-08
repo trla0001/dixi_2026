@@ -2,15 +2,13 @@
  import { Image } from 'astro:assets';
 import facaden from "../../assets/images/dummy.jpg";
 
-import data from "../../data/text.json";
 
-const { variant = "", billeder = {}} = Astro.props;
-
+const { variant = "", images = []} = Astro.props;
 
 ---
 
 <!-- Et enkelt billede -->
-{(variant === "single" && <Image width={600} width={600}  src={billeder[0]} alt="" class="rounded-sm md:rounded-lg aspect-3/4"/>)}
+{(variant === "single" && <Image width={600} height={600} src={images[0]} alt="" class="rounded-sm md:rounded-lg aspect-3/4"/>)}
 
 
 <!-- Grid med 4 billeder -->
