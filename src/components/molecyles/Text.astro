@@ -4,9 +4,9 @@ import Accordion from '../atoms/Accordion.astro';
 
 import section from "../../data/text.json";
 
-const { variant = "", overskrift="", show="", button_text = "" } = Astro.props;
+const { overskrift = {}, variant = "", show="", button_text = "" } = Astro.props;
 
-
+const textFields = ["text_1", "text_2", "text_3", "text_4", "text_5"];
 
 ---
 
@@ -42,18 +42,36 @@ const { variant = "", overskrift="", show="", button_text = "" } = Astro.props;
 
  {(variant === "simple" && 
 <article>
-    <h2 class="heading-large pb-6 md:pb-8">{overskrift}</h2>
+    <h2 class="heading-large pb-6 md:pb-8">{overskrift.title}</h2>
 
-{
-    section.map((key) => {
-      return (
-            <p class="body-base pb-2 md:pb-4 text-text-secondary">{key.text_1}{key.text_2}{key.text_3}{key.text_4}</p> 
-      );
-    })
-  }
+{section.map((item) => (
+  <>
+    {textFields.map((key) => item[key] && (
+      <p class="body-base pb-2 md:pb-4 text-text-secondary">{item[key]}</p>
+    ))}
+  </>
+))}
 
-
-
-   {(show === "true" &&  <Link variant = "ButtonSecondary" size ="large">{button_text}</Link>)}
+   {(show === "true" &&  <div class="pt-8 md:pt-12"><Link variant = "ButtonSecondary" size ="large">{button_text}</Link></div>)}
 </article> )}
 
+
+{(variant === "accordion" && 
+<article class="flex flex-col justify-between h-full">
+  <div>
+      <h2 class="heading-large pb-6 md:pb-8">{overskrift.title}</h2>
+ {section.map((item) => (
+  <>
+    {textFields.map((key) => item[key] && (
+      <p class="body-base pb-2 md:pb-4 text-text-secondary">{item[key]}</p>
+    ))}
+  </>
+))}
+  </div>
+
+<div>
+<Accordion overskrift="Hello"></Accordion>
+<Accordion overskrift="Hello!!!!"></Accordion>
+<Accordion overskrift="Hello world!"></Accordion>
+</div>
+</article> )}
