@@ -9,7 +9,7 @@
     "text_2": "Det, der begyndte som et initiativ for at støtte byggeriet af et klubhus, udviklede sig til et engageret netværk af frivillige. Til sammen har deres indsats ført til en betydelig succes med et økonomisk overskud, som blev kanaliseret til klubhusets færdiggørelse og andre store projekter i boldklubben.",
     "test": "true",
     "cta": "Læs mere om os",
-    "images": ["/images/forside/pige_arbejder.webp"]
+    "images": ["/src/assets/images/forside/pige_arbejder.webp"]
   },
   {
     "id": 2,
