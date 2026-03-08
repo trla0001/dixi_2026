@@ -6,6 +6,8 @@ import section from "../../data/text.json";
 
 const { overskrift = {}, variant = "", show="", button_text = "" } = Astro.props;
 
+const testing = ["accordion_header", "accordion_content", "accordion_header_2", "accordion_content_2"];
+
 const textFields = ["text_1", "text_2", "text_3", "text_4", "text_5"];
 
 ---
@@ -56,6 +58,9 @@ const textFields = ["text_1", "text_2", "text_3", "text_4", "text_5"];
 </article> )}
 
 
+
+
+
 {(variant === "accordion" && 
 <article class="flex flex-col justify-between h-full">
   <div>
@@ -69,17 +74,19 @@ const textFields = ["text_1", "text_2", "text_3", "text_4", "text_5"];
 ))}
   </div>
 
-<div>
-      {/* {
-    section.map((test) => {
-      return (
-        
-          <Accordion overskrift={test.accordion_header}>
-        <p class="body-base text-text-secondary pt-4">{test.accordion_content}</p>
-      </Accordion>
-        
-      );
-    })
-  } */}
-</div>
+ <div>
+
+ {section
+      .filter((item) => item.textVariant === "accordion")
+      .map((item) =>
+        item.accordion?.map((acc) => (
+          <Accordion data={acc} />
+        ))
+      )
+    }
+
+     
+ </div>
 </article> )}
+
+

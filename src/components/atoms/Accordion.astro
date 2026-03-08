@@ -1,11 +1,13 @@
 ---
-const { overskrift = ""} = Astro.props;
+const { data } = Astro.props;
+const { header, content } = data;
+
 ---
 
 <details class="py-6 px-4 border-b border-b-border-primary hover:bg-background-secondary">
-  <summary class="body-large font-medium cursor-pointer flex justify-between">{overskrift}</summary>
+  <summary class="body-large font-medium cursor-pointer flex justify-between">{header}</summary>
   <article class="body-small pt-8 md:pr-[25%]">
-   <slot></slot>
+   <p class="body-base text-text-secondary">{content}</p>
   </article>
 </details>
 
