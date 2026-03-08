@@ -1,0 +1,21 @@
+---
+import Images from '../../components/atoms/Images.astro';
+import Text from '../../components/molecyles/Text.astro';
+
+// layout = TextLeft | TextRight
+// img_variant = single | grid
+// text_variant = simple | accordion
+const { layout = "", img_variant=""} = Astro.props;
+
+const layoutVariant = {
+  TextLeft: "order-none",
+  TextRight: "order-2",
+};
+---
+
+<section class="section-main grid grid-cols-2 gap-6 lg:gap-20 items-center">
+<div class:list={[layoutVariant[layout]]}>
+    <Text overskrift="Hello" text_1=" excepturi assumenda architecto voluptate quia beatae exercitationem nulla voluptatum unde repellendus nam" text_2=" excepturi assumenda architecto voluptate quia beatae exercitationem nulla voluptatum unde repellendus nam" text_3=" excepturi assumenda architecto voluptate quia beatae exercitationem nulla voluptatum unde repellendus nam"/> 
+</div>
+<div><Images variant={img_variant}/></div>
+</section>
