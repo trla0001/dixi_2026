@@ -1,0 +1,26 @@
+---
+ import { Image } from 'astro:assets';
+import facaden from "../../assets/images/dummy.jpg";
+
+const { variant = "" } = Astro.props;
+---
+
+<!-- Et enkelt billede -->
+{(variant === "single" && <Image src={facaden} alt="" class="rounded-sm md:rounded-lg aspect-3/4"/>)}
+
+
+<!-- Grid med 4 billeder -->
+{(variant === "grid" && 
+
+<article class="grid grid-cols-2 gap-4 lg:gap-6">
+    
+        <Image src={facaden} alt="" class="rounded-xs md:rounded-sm aspect-square"/>
+        <Image src={facaden} alt="" class="rounded-xs md:rounded-sm aspect-square"/>
+        <Image src={facaden} alt="" class="rounded-xs md:rounded-sm aspect-square"/>
+        <Image src={facaden} alt="" class="rounded-xs md:rounded-sm aspect-square"/>
+        
+</article>
+
+
+)}
+
