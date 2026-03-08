@@ -2,14 +2,19 @@
 
 import Button from '../components/atoms/Button.astro';
 import Link from '../components/atoms/Link.astro';
+import Images from '../components/atoms/Images.astro';
 import Hero from "../components/organisms/Hero.astro";
+import SectionWrapper from "../components/organisms/SectionWrapper.astro";
 import CardInstagram from "../components/molecyles/CardsInstagram.astro";
-import posts from "../data/instagram.json";
+import Text from "../components/molecyles/Text.astro";
+
 
 
 import MainLayout from "../layouts/MainLayout.astro";
 import SocialProof from "../components/molecyles/SocialProof.astro";
 import CTABanner from "../components/organisms/CTABanner.astro";
+
+import posts from "../data/instagram.json";
 
 import { Image } from 'astro:assets';
 import facaden from "../assets/images/forside/facaden.webp";
@@ -21,6 +26,7 @@ import CardsInstagram from '../components/molecyles/CardsInstagram.astro';
  
 
 	 <!-- Test af komponenter -->
+	  	<Text overskrift="Hello" text_1="helelflfofog gkggkbm fkkfvb" text_2="helelflfofog gkggkbm fkkfvb" text_3="helelflfofog gkggkbm fkkfvb"></Text>
 	<article>
 		<h1 class="body-base">Index overskrift</h1>
 		<Link variant = "ButtonInverted" size ="large">Klik!</Link>
@@ -42,6 +48,8 @@ import CardsInstagram from '../components/molecyles/CardsInstagram.astro';
     })
   }
 </ul>
+
+  <SectionWrapper  sectionId={1}  layout="TextRight" img_variant="single" text_variant="simple" show="true"/>
 	<!-- Test af komponenter slut-->
 	
 	<section id="hero">

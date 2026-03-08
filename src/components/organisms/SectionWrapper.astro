@@ -2,20 +2,26 @@
 import Images from '../../components/atoms/Images.astro';
 import Text from '../../components/molecyles/Text.astro';
 
+import textSections from "../../data/text.json";
+
+
 // layout = TextLeft | TextRight
 // img_variant = single | grid
 // text_variant = simple | accordion
-const { layout = "", img_variant="", text_variant=""} = Astro.props;
+const { layout = "", img_variant="", text_variant="", sectionId = 1} = Astro.props;
 
 const layoutVariant = {
   TextLeft: "order-none",
   TextRight: "order-2",
 };
+
+// Hent sektionen med det rigtige ID
+const sectionData = textSections.find(s => s.id === sectionId);
 ---
 
 <section class="section-main grid grid-cols-2 gap-6 lg:gap-20 items-center">
 <div class:list={[layoutVariant[layout]]} class="h-full">
-    <Text variant={text_variant} overskrift="Hello" text_1=" excepturi assumenda architecto voluptate quia beatae exercitationem nulla voluptatum unde repellendus nam" text_2=" excepturi assumenda architecto voluptate quia beatae exercitationem nulla voluptatum unde repellendus nam" text_3=" excepturi assumenda architecto voluptate quia beatae exercitationem nulla voluptatum unde repellendus nam"/> 
+    <Text variant={text_variant} overskrift={sectionData.title} show={sectionData.test} button_text={sectionData.cta} /> 
 </div>
 <div><Images variant={img_variant}/></div>
 </section>

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "layout": "image-left",
+    "imageVariant": "single",
+    "textVariant": "simple",
+    "title": "Historien bag",
+    "text_1": "Bag historien om DIXI Burger gemmer der sig fortællingen om en gruppe fra KFUM’s Boldklub Roskilde, som lod sig inspirere af den pulserende kultur i New Orleans til at skabe en madbod på Roskilde Festival.",
+    "text_2": "Det, der begyndte som et initiativ for at støtte byggeriet af et klubhus, udviklede sig til et engageret netværk af frivillige. Til sammen har deres indsats ført til en betydelig succes med et økonomisk overskud, som blev kanaliseret til klubhusets færdiggørelse og andre store projekter i boldklubben.",
+    "test": "true",
+    "cta": "Læs mere om os",
+    "images": ["/images/forside/pige_arbejder.webp"]
+  },
+  {
+    "id": 2,
+    "layout": "image-right",
+    "imageVariant": "grid",
+    "textVariant": "accordion",
+    "title": "Vores team",
+    "text": "Mød teamet",
+    "images": [
+      "/images/1.jpg",
+      "/images/2.jpg",
+      "/images/3.jpg",
+      "/images/4.jpg"
+    ],
+    "accordion": [
+      { "title": "CEO", "content": "Navn" },
+      { "title": "CTO", "content": "Navn" }
+    ]
+  }
+]
