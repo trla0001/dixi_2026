@@ -20,8 +20,8 @@ const layoutVariant = {
 const sectionData = textSections.find(s => s.id === sectionId);
 ---
 
-<section class="section-main grid grid-cols-2 gap-6 lg:gap-20 items-center">
-<div class:list={[layoutVariant[layout]]} class="h-full">
+<section class="section-main grid grid-cols-2 gap-6 lg:gap-20">
+<div class:list={[layoutVariant[layout]]} class="h-full  flex items-center">
     <Text overskrift={sectionData} variant={text_variant} show={sectionData.test} button_text={sectionData.cta} /> 
 </div>
 <div><Images variant={img_variant} images={sectionData.images} /></div>
