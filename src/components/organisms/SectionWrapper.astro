@@ -23,5 +23,5 @@ const layoutFromJson = sectionData?.layout === "image-right" ? "image-right" : "
 <div class:list={[layoutVariant[layoutFromJson]]} class="h-full flex items-center">
     <Text data={sectionData}   /> 
 </div>
-<div><Images variant={sectionData.imageVariant} item={sectionData} /></div>
+<div><Images data={sectionData} /></div>
 </section>

@@ -1,27 +1,52 @@
 ---
 // Images.astro
-const { variant = {}, item } = Astro.props;
+const { data = {} } = Astro.props;
+const { imageVariant, images = [] } = data;
+
+
 ---
 
-{variant === "single" && item && item.images?.length > 0 && (
-  <img
-    src={item.images[0]}
-    alt={item.alt}
-    class="rounded-sm md:rounded-lg aspect-3/4 object-cover"
-    width="600"
-    height="600"
-  />
+{imageVariant === "single" && images.length > 0 && (
+  <img class="rounded-sm md:rounded-lg aspect-3/4 object-cover" src={images[0].src} alt={images[0].alt} />
 )}
 
-{variant === "grid" && item && item.images?.length > 0 && (
-  <article class="grid grid-cols-2 gap-4 lg:gap-6">
-    {item.images.map((img, index) => (
-      <img
-        key={index}
-        src={img}
-        alt={item.alt}
-        class="rounded-xs md:rounded-sm aspect-square object-cover"
-      />
+
+<!-- {imageVariant === "grid" && (
+  <div class="grid grid-cols-2 gap-4">
+    {images.map((image) => (
+      <img src={image.src} alt={image.alt} class="rounded-xs md:rounded-sm aspect-square object-cover" />
     ))}
-  </article>
+  </div>
+)} -->
+
+{imageVariant === "grid" && (
+  <div class="grid grid-cols-2 gap-4">
+    
+    <img
+      src={images[0].src}
+      alt={images[0].alt}
+      class="w-full h-full aspect-square object-cover rounded-xs md:rounded-sm"
+    />
+
+    <img
+      src={images[1].src}
+      alt={images[1].alt}
+      class="h-3/4 w-3/4 aspect-square object-cover rounded-xs md:rounded-sm self-end"
+    />
+
+   <div class="flex justify-end items-start">
+      <img
+        src={images[2].src}
+        alt={images[2].alt}
+        class="h-3/4 w-3/4 aspect-square object-cover rounded-xs md:rounded-sm"
+      />
+   </div>
+
+    <img
+      src={images[3].src}
+      alt={images[3].alt}
+      class="w-full h-full aspect-square object-cover rounded-xs md:rounded-sm"
+    />
+
+  </div>
 )}

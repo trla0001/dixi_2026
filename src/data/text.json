@@ -47,7 +47,12 @@
     "cta": "Læs mere om os",
     "href": "/omos",
     "target": "_self",
-    "images": ["/src/assets/images/forside/pige_arbejder.webp"]
+    "images": [
+  {
+    "src": "/src/assets/images/forside/pige_arbejder.webp",
+    "alt": "Frivillig der vender bacon på panden i Dixi Burger madboden"
+  }
+]
   },
   {
     "id": 2,
@@ -61,12 +66,24 @@
     "cta": "Læs mere om at være frivillig",
     "href": "/frivillig",
     "target": "_self",
-    "images": [
-      "/src/assets/images/forside/stemning_madbod.webp",
-      "/src/assets/images/forside/pige_samler_burger.webp",
-      "/src/assets/images/forside/boeffer.webp",
-      "/src/assets/images/forside/betjening.webp"
-    ]
+      "images": [
+  {
+    "src": "/src/assets/images/forside/stemning_madbod.webp",
+    "alt": "Frivillig der vender bacon på panden i Dixi Burger madboden"
+  },
+   {
+    "src": "/src/assets/images/forside/pige_samler_burger.webp",
+    "alt": "Frivillig der vender bacon på panden i Dixi Burger madboden"
+  },
+   {
+    "src": "/src/assets/images/forside/boeffer.webp",
+    "alt": "Frivillig der vender bacon på panden i Dixi Burger madboden"
+  },
+   {
+    "src": "/src/assets/images/forside/betjening.webp",
+    "alt": "Frivillig der vender bacon på panden i Dixi Burger madboden"
+  }
+]
   },
   {
     "id": 3,
@@ -80,7 +97,12 @@
     "show": "",
     "cta": "",
     "href": "",
-    "images": ["/src/assets/images/omos/facade_2.webp"]
+    "images": [
+  {
+    "src": "/src/assets/images/omos/facade_2.webp",
+    "alt": "Frivillig der vender bacon på panden i Dixi Burger madboden"
+  }
+]
   },
   {
     "id": 4,
@@ -95,7 +117,12 @@
     "show": "",
     "cta": "",
     "href": "",
-    "images": ["/src/assets/images/omos/facade_2.webp"]
+     "images": [
+  {
+    "src": "/src/assets/images/omos/facade_2.webp",
+    "alt": "Frivillig der vender bacon på panden i Dixi Burger madboden"
+  }
+]
   },
   {
     "id": 5,
@@ -111,12 +138,24 @@
     "cta": "Besøg klubbens hjemmeside",
     "href": "https://www.roskilde-kfum.dk/",
     "target": "_blank",
-    "images": [
-      "/src/assets/images/omos/kfum_1.webp",
-      "/src/assets/images/omos/kfum_2.webp",
-      "/src/assets/images/omos/kfum_3.webp",
-      "/src/assets/images/omos/kfum_4.webp"
-    ]
+      "images": [
+  {
+    "src": "/src/assets/images/omos/kfum_1.webp",
+    "alt": ""
+  },
+   {
+    "src": "/src/assets/images/omos/kfum_2.webp",
+    "alt": ""
+  },
+   {
+    "src": "/src/assets/images/omos/kfum_3.webp",
+    "alt": ""
+  },
+   {
+    "src": "/src/assets/images/omos/kfum_4.webp",
+    "alt": ""
+  }
+]
   },
   {
     "id": 6,
@@ -131,12 +170,24 @@
     "show": "",
     "cta": "",
     "href": "",
-    "images": [
-      "/src/assets/images/frivillig/pige_arbejder_2.webp",
-      "/src/assets/images/frivillig/bar.webp",
-      "/src/assets/images/frivillig/intro.webp",
-      "/src/assets/images/frivillig/bacon_vendes.webp"
-    ]
+     "images": [
+  {
+    "src": "/src/assets/images/frivillig/pige_arbejder_2.webp",
+    "alt": ""
+  },
+   {
+    "src": "/src/assets/images/frivillig/bar.webp",
+    "alt": ""
+  },
+   {
+    "src": "/src/assets/images/frivillig/intro.webp",
+    "alt": ""
+  },
+   {
+    "src": "/src/assets/images/frivillig/bacon_vendes.webp",
+    "alt": ""
+  }
+]
   },
   {
     "id": 7,
@@ -150,6 +201,7 @@
     "cta": "",
     "href": "",
     "images": ["/src/assets/images/frivillig/bagomraade.webp"],
+    
     "accordion": [
       { "header": "Madbod", "content": "Hello" },
       { "header": "Service", "content": "Hello" }
@@ -166,7 +218,12 @@
     "show": "true",
     "cta": "",
     "href": "",
-    "images": ["/src/assets/images/frivillig/bagomraade.webp"],
+       "images": [
+  {
+    "src": "/src/assets/images/frivillig/bagomraade.webp",
+    "alt": "Frivillig der vender bacon på panden i Dixi Burger madboden"
+  }
+],
     "accordion": [
       { "header": "Mad og drikke", "content": "helllooo" },
       { "header": "Dixi's bagområde", "content": "jvjvjvj" },
@@ -186,11 +243,24 @@
     "show": "",
     "cta": "",
     "href": "",
-    "images": [
-      "/src/assets/images/frivillig/pige_arbejder_2.webp",
-      "/src/assets/images/frivillig/bar.webp",
-      "/src/assets/images/frivillig/intro.webp",
-      "/src/assets/images/frivillig/bacon_vendes.webp"
-    ]
+  
+      "images": [
+  {
+    "src": "",
+    "alt": ""
+  },
+   {
+    "src": "",
+    "alt": ""
+  },
+   {
+    "src": "",
+    "alt": ""
+  },
+   {
+    "src": "",
+    "alt": ""
+  }
+]
   }
 ]
