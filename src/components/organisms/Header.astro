@@ -7,10 +7,10 @@ import burgerIcon from "../../assets/svg/menu.svg";
 import closeIcon from "../../assets/svg/close.svg";
 ---
 
-<div x-data="{ showmenu: false }" class="px-6 md:px-8 py-2 md:py-0 w-full bg-background-secondary">
+<div x-data="{ showmenu: false }" class="relative px-6 md:px-8 py-2 md:py-0 w-full bg-background-secondary">
   <div id="navbar" class="flex flex-row justify-between items-center">
     <div id="logo" class="">
-      <a href="/"><Image src={logo} alt="A bird sitting on a nest of eggs." class="w-26 h-auto" /></a>
+      <a href="/"><Image src={logo} alt="A bird sitting on a nest of eggs." class="w-auto h-4 md:h-6" /></a>
     </div>
     <nav id="desktopmenu" class="hidden lg:flex lg:items-center gap-8">
       <ul class="flex flex-row gap-8">
@@ -19,22 +19,22 @@ import closeIcon from "../../assets/svg/close.svg";
         <li class=""><Link href="/menu" variant="NavLink" size="base">Vores menu</Link></li>
         <li class=""><Link href="/kontakt" variant="NavLink" size="base">Kontakt os</Link></li>
       </ul>
-        <div class=""><Link href="#" variant="ButtonPrimary" size="medium">Tilmeld dig</Link></div>
+        <div class=""><Link href="https://www.kfumfestival.dk/festival/" target="_blank" variant="ButtonPrimary" size="medium">Tilmeld dig</Link></div>
     </nav>
-    <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"> <template x-if="!showmenu">
+    <button id="burgermenu" class="lg:hidden cursor-pointer" x-on:click="showmenu = ! showmenu"> <template x-if="!showmenu">
     <Image src={burgerIcon} alt="Åbn menu" class="w-6 h-6"/>
   </template>
   <template x-if="showmenu">
     <Image src={closeIcon} alt="Luk menu" class="w-6 h-6"/>
   </template></button>
   </div>
-  <nav id="mobilmenu" class="flex flex-col content-center py-4 md:py-6 lg:hidden" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+  <nav id="mobilmenu" class="absolute left-0 top-full w-full flex flex-col content-center px-6 md:px-8  py-4 md:py-6 lg:hidden  bg-background-secondary" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
     <ul>
       <li class="text-end pb-2"><Link href="/frivillig" variant="NavLink" size="base">Frivillig hos Dixi</Link></li>
       <li class="text-end pb-2"><Link href="/omos" variant="NavLink" size="base">Om os</Link></li>
       <li class="text-end pb-2"><Link href="/menu" variant="NavLink" size="base">Vores menu</Link></li>
       <li class="text-end "><Link href="/kontakt" variant="NavLink" size="base">Kontakt os</Link></li>
     </ul>
-    <div class="pt-6"><Link href="#" variant="ButtonPrimary" size="medium" >Tilmeld dig</Link></div>
+    <div class="pt-6"><Link href="https://www.kfumfestival.dk/festival/" target="_blank" variant="ButtonPrimary" size="medium" >Tilmeld dig</Link></div>
   </nav>
 </div>
