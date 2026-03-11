@@ -40,21 +40,9 @@ const { title, text_1, text_2, text_3, text_4, text_5, cta, textVariant, show, h
   </div>
 
  <div>
-
- {/* {section
-      .filter((item) => item.textVariant === "accordion")
-      .map((item) =>
-        item.accordion?.map((acc) => (
-          <Accordion data={acc} />
-        ))
-      )
-    } */}
-
     {data.accordion?.map((acc) => (
   <Accordion data={acc} />
-))}
-
-     
+))}   
  </div>
 </article> )}
 
