@@ -3,6 +3,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/organisms/Hero.astro";
 import SectionWrapper from "../components/organisms/SectionWrapper.astro";
 
+import CardInstagram from "../components/molecyles/CardsInstagram.astro";
+import posts from "../data/instagram.json";
 ---
 
 
@@ -12,5 +14,17 @@ import SectionWrapper from "../components/organisms/SectionWrapper.astro";
     <SectionWrapper  sectionId={4} />
     <SectionWrapper  sectionId={5} />
 
+
+    <ul class="grid grid-cols-2 md:grid-cols-4 gap-4">
+  {
+    posts.map((post) => {
+      return (
+        <li>
+          <CardInstagram img={post.img} href={post.href} />
+        </li>
+      );
+    })
+  }
+</ul>
 	
 </MainLayout>

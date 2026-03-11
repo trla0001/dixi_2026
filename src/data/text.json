@@ -64,7 +64,7 @@
   },
   {
     "id": 3,
-    "layout": "image-right",
+    "layout": "image-left",
     "imageVariant": "single",
     "textVariant": "simple",
     "title": "Hvem er vi?",
@@ -77,7 +77,7 @@
   },
   {
     "id": 4,
-    "layout": "image-left",
+    "layout": "image-right",
     "imageVariant": "single",
     "textVariant": "simple",
     "title": "Vores historie",
@@ -91,7 +91,7 @@
   },
   {
     "id": 5,
-    "layout": "image-right",
+    "layout": "image-left",
     "imageVariant": "grid",
     "textVariant": "simple",
     "title": "Hvad støtter vi?",
@@ -106,6 +106,77 @@
       "/src/assets/images/omos/kfum_2.webp",
       "/src/assets/images/omos/kfum_3.webp",
       "/src/assets/images/omos/kfum_4.webp"
+    ]
+  },
+  {
+    "id": 6,
+    "layout": "image-right",
+    "imageVariant": "grid",
+    "textVariant": "simple",
+    "title": "Hvordan er det at være frivillig hos os?",
+    "text_1": "Som frivillig hos Dixi Burger bliver du en del af en madbod med ca. 350 frivillige i alle aldre, så der er højt humør og masser af liv døgnet rundt.",
+    "text_2": "At blive en del af Dixi Burger kræver ikke forudgående erfaring. Det vigtigste er, at du medbringer godt humør, engagement og gåpåmod.",
+    "text_3": "Du bliver tilknyttet erfarne holdledere, som hjælper dig godt i gang, og alle opgaver løses i fællesskab, så ingen står alene. Uanset erfaring sørger vi for, at du hurtigt føler dig tryg og kan bidrage til den gode stemning.",
+    "text_4": "Du skal kunne yde en indsats på 32 timer fordelt på hele festivalperioden, og du vælger selv din vagtplan ved tilmelding. Du har mulighed for at tilmelde dig sammen med dine venner, så I kan arbejde på de samme tidspunkter. Vagterne er fordelt på 3 dage, og fordi vi har åbent til kl. 3.00, skal du være klar på 1-2 sene vagter.",
+    "show": "",
+    "cta": "",
+    "images": [
+      "/src/assets/images/frivillig/pige_arbejder_2.webp",
+      "/src/assets/images/frivillig/bar.webp",
+      "/src/assets/images/frivillig/intro.webp",
+      "/src/assets/images/frivillig/bacon_vendes.webp"
+    ]
+  },
+  {
+    "id": 7,
+    "layout": "image-right",
+    "imageVariant": "single",
+    "textVariant": "accordion",
+    "title": "Om opgaven",
+    "text_1": "Som frivillig på Dixi Burger kan du arbejde med alt fra produktion af burgere og betjening af festivalgæster, til rengøring, oprydning og opfyldning.",
+    "text_2": "Der er masser af forskellige opgaver, som skal løses i en stor madbod, så der findes noget for enhver. Uanset om du trives bedst bag kulissen eller tæt på gæsterne.",
+    "show": "",
+    "cta": "",
+    "images": ["/src/assets/images/frivillig/bagomraade.webp"],
+    "accordion": [
+      { "header": "Madbod", "content": "Hello" },
+      { "header": "Service", "content": "Hello" }
+    ]
+  },
+  {
+    "id": 8,
+    "layout": "image-left",
+    "imageVariant": "single",
+    "textVariant": "accordion",
+    "title": "Fordele ved at være frivillig hos os",
+    "text_1": "Som frivillig hos Dixi Burger får du mere end bare en gratis festivalbillet. Du bliver en del af fællesskabet med resten af Dixi-holdet, og en del af den gode stemning i bagområdet. Du får også rig mulighed for at få nye venskaber, og deltage i festivalens mange tilbud med andre frivillige. ",
+    "text_2": "Derudover får du adgang til områder og faciliteter kun for frivillige, hvor du kan spise, slappe af, lade din telefon op.",
+    "show": "true",
+    "cta": "",
+    "images": ["/src/assets/images/frivillig/bagomraade.webp"],
+    "accordion": [
+      { "header": "Mad og drikke", "content": "helllooo" },
+      { "header": "Dixi's bagområde", "content": "jvjvjvj" },
+      { "header": "Roskilde Festival's Volunteer Village", "content": "fjjgjj" }
+    ]
+  },
+  {
+    "id": 9,
+    "layout": "image-right",
+    "imageVariant": "grid",
+    "textVariant": "simple",
+    "title": "Dixi, Vexi og Lemonade",
+    "text_1": "...",
+    "text_2": "....",
+    "text_3": "...",
+    "text_4": "....",
+    "show": "",
+    "cta": "",
+    "images": [
+      "/src/assets/images/frivillig/pige_arbejder_2.webp",
+      "/src/assets/images/frivillig/bar.webp",
+      "/src/assets/images/frivillig/intro.webp",
+      "/src/assets/images/frivillig/bacon_vendes.webp"
     ]
   }
 ]
