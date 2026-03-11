@@ -1,10 +1,16 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/organisms/Hero.astro";
+import SectionWrapper from "../components/organisms/SectionWrapper.astro";
 
 ---
 
 
 <MainLayout title="Titel" description="beskrivelse" og:title="beskrivelse" og:description="beskrivelse">
+    <Hero overskrift="Om os" bgImage="dummy.jpg"  />
+    <SectionWrapper  sectionId={3} />
+    <SectionWrapper  sectionId={4} />
+    <SectionWrapper  sectionId={5} />
 
 	
 </MainLayout>

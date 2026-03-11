@@ -64,22 +64,22 @@
   },
   {
     "id": 3,
-    "layout": "",
-    "imageVariant": "",
-    "textVariant": "",
+    "layout": "image-right",
+    "imageVariant": "single",
+    "textVariant": "simple",
     "title": "Hvem er vi?",
     "text_1": "Dixi Burger er en foreningsdrevet madbod, som har været en del af Roskilde Festival siden år 2010, men vores rødder strækker sig helt tilbage til KFUM’s Boldklub Roskildes første deltagelse i 1971.",
     "text_2": "Vi er kendt for vores kreolsk inspirerede festivalburger med et spicy kick, der skiller sig ud i mængden. Foretrækker du et kødfrit alternativ, tilbyder vi også vores Vexi-burger, med samme karakteristiske smag.",
     "text_3": "Hos Dixi Burger handler det dog om mere end god mad. Når du køber en burger hos os, støtter du samtidig KFUM’s Boldklub Roskilde.Hos Dixi Burger handler det dog om mere end god mad. Når du køber en burger hos os, støtter du samtidig KFUM’s Boldklub Roskilde.",
     "show": "",
     "cta": "",
-    "images": ["/images/1.jpg"]
+    "images": ["/src/assets/images/omos/facade_2.webp"]
   },
   {
     "id": 4,
-    "layout": "",
-    "imageVariant": "",
-    "textVariant": "",
+    "layout": "image-left",
+    "imageVariant": "single",
+    "textVariant": "simple",
     "title": "Vores historie",
     "text_1": "Historien om Dixi Burger er en fortælling om, hvordan en gruppe engagerede individer fra KFUM's Boldklub Roskilde lod sig inspirere af den pulserende kultur i New Orleans til at skabe en madbod på Roskilde Festival.",
     "text_2": "Deres mål var at støtte byggeriet af klubhuset ved at servere kreolsk-inspireret mad og skabe en festlig stemning, der hyldede mangfoldigheden og musikken på festivalen.",
@@ -87,13 +87,13 @@
     "text_4": "Deres indsats førte til en betydelig succes med et økonomisk overskud, som blev kanaliseret til klubhusets færdiggørelse og andre store projekter i boldklubben.",
     "show": "",
     "cta": "",
-    "images": ["/images/1.jpg"]
+    "images": ["/src/assets/images/omos/facade_2.webp"]
   },
   {
-    "id": 4,
-    "layout": "",
-    "imageVariant": "",
-    "textVariant": "",
+    "id": 5,
+    "layout": "image-right",
+    "imageVariant": "grid",
+    "textVariant": "simple",
     "title": "Hvad støtter vi?",
     "text_1": "De penge, som vi hvert år tjener gennem vores arbejde på Roskilde Festival, går ubeskåret til at støtte KFUM’s Boldklub Roskilde. Vi arbejder for at forbedre fodboldklubben og dens sportslige faciliteter, og ikke mindst for at opretholde klubbens høje aktivitetsniveau. ",
     "text_2": "Hvert år fordeles overskuddet mellem KFUM’s Boldklub Roskilde og Byggefonden. Byggefonden blev etableret i 1973 med henblik på at skaffe økonomiske midler til etablering af anlæg og klubhus på Lillevang, og bevilger dermed ikke midler til driftsmæssige formål. Du kan læse den lovpligtige redegørelse om fondsledelse her. ",
@@ -101,6 +101,11 @@
     "text_4": "Fremadrettet har klubben planer om at lægge nyt græstæppe på deres 15 år gamle kunstbane. Derudover har klubben et ønske om at opgradere belysningen på deres nye kunstbane samt modernisere den ældre del af klubhuset.",
     "show": "true",
     "cta": "Besøg klubbens hjemmeside",
-    "images": ["/images/1.jpg"]
+    "images": [
+      "/src/assets/images/omos/kfum_1.webp",
+      "/src/assets/images/omos/kfum_2.webp",
+      "/src/assets/images/omos/kfum_3.webp",
+      "/src/assets/images/omos/kfum_4.webp"
+    ]
   }
 ]
