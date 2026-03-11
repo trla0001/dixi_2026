@@ -21,8 +21,10 @@ const sizeClasses = {
 // Tjek om linket er aktivt
 const isActive = Astro.url.pathname === href;
 
-// Tilføj underline permanent hvis aktiv
-const activeClass = isActive ? "border-b border-border-brand" : "";
+// Kun active styling hvis det IKKE er TextLink
+const activeClass = isActive && variant !== "TextLink"
+  ? "border-b border-border-brand"
+  : "";
 ---
 
 <a href={href} class="" target={target} class:list={[linkStyling, variantClasses[variant], sizeClasses[size], activeClass]}><slot /></a>
