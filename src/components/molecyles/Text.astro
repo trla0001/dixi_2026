@@ -7,7 +7,7 @@ import section from "../../data/text.json";
 const testing = ["accordion_header", "accordion_content", "accordion_header_2", "accordion_content_2"];
 
 const { data = {} } = Astro.props;
-const { title, text_1, text_2, text_3, text_4, text_5, cta, textVariant, show } = data;
+const { title, text_1, text_2, text_3, text_4, text_5, cta, textVariant, show, href, target } = data;
 
 ---
 
@@ -15,13 +15,13 @@ const { title, text_1, text_2, text_3, text_4, text_5, cta, textVariant, show } 
  {(textVariant === "simple" && 
 <article class="">
     <h2 class="heading-large pb-6 md:pb-8">{title}</h2>
-    <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_1}</p>
-    <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_2}</p>
-    <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_3}</p>
-    <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_4}</p>
-    <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_5}</p>
+   {text_1 && <p class="body-base text-text-secondary">{text_1}</p>}
+   {text_2 && <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_2}</p>}
+   {text_3 && <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_3}</p>}
+   {text_4 && <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_4}</p>}
+   {text_5 && <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_5}</p>}
 
-   {(show === "true" &&  <div class="pt-8 md:pt-12"><Link variant = "ButtonSecondary" size ="large">{cta}</Link></div>)}
+   {(show === "true" &&  <div class="pt-8 md:pt-12 pb-8 md:pb-0"><Link variant="ButtonSecondary" size="large" href={href} target={target}>{cta}</Link></div>)}
 </article> )}
 
 
@@ -32,11 +32,11 @@ const { title, text_1, text_2, text_3, text_4, text_5, cta, textVariant, show } 
 <article class="flex flex-col justify-between h-full">
   <div>
       <h2 class="heading-large pb-6 md:pb-8">{title}</h2>
-      <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_1}</p>
-      <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_2}</p>
-      <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_3}</p>
-      <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_4}</p>
-      <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_5}</p>
+      {text_1 && <p class="body-base text-text-secondary">{text_1}</p>}
+      {text_2 && <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_2}</p>}
+      {text_3 && <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_3}</p>}
+      {text_4 && <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_4}</p>}
+      {text_5 && <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_5}</p>}
   </div>
 
  <div>

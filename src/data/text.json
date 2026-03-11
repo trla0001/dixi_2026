@@ -9,6 +9,7 @@
     "text_2": "",
     "show": "true",
     "cta": "",
+    "href": "",
     "images": ["/images/1.jpg"]
   },
   {
@@ -21,6 +22,7 @@
     "text_2": "",
     "show": "true",
     "cta": "",
+    "href": "",
     "images": [
       "/images/1.jpg",
       "/images/2.jpg",
@@ -43,6 +45,8 @@
     "text_2": "Det, der begyndte som et initiativ for at støtte byggeriet af et klubhus, udviklede sig til et engageret netværk af frivillige. Til sammen har deres indsats ført til en betydelig succes med et økonomisk overskud, som blev kanaliseret til klubhusets færdiggørelse og andre store projekter i boldklubben.",
     "show": "true",
     "cta": "Læs mere om os",
+    "href": "/omos",
+    "target": "_self",
     "images": ["/src/assets/images/forside/pige_arbejder.webp"]
   },
   {
@@ -55,6 +59,8 @@
     "text_2": "Derudover for du som frivillig en masse fordele såsom adgang til festivallens frivillig-områder, forplejning, og mulighed for at deltage i sociale aktiviteter med dine med frivillige.",
     "show": "true",
     "cta": "Læs mere om at være frivillig",
+    "href": "/frivillig",
+    "target": "_self",
     "images": [
       "/src/assets/images/forside/stemning_madbod.webp",
       "/src/assets/images/forside/pige_samler_burger.webp",
@@ -73,6 +79,7 @@
     "text_3": "Hos Dixi Burger handler det dog om mere end god mad. Når du køber en burger hos os, støtter du samtidig KFUM’s Boldklub Roskilde.Hos Dixi Burger handler det dog om mere end god mad. Når du køber en burger hos os, støtter du samtidig KFUM’s Boldklub Roskilde.",
     "show": "",
     "cta": "",
+    "href": "",
     "images": ["/src/assets/images/omos/facade_2.webp"]
   },
   {
@@ -87,6 +94,7 @@
     "text_4": "Deres indsats førte til en betydelig succes med et økonomisk overskud, som blev kanaliseret til klubhusets færdiggørelse og andre store projekter i boldklubben.",
     "show": "",
     "cta": "",
+    "href": "",
     "images": ["/src/assets/images/omos/facade_2.webp"]
   },
   {
@@ -101,6 +109,8 @@
     "text_4": "Fremadrettet har klubben planer om at lægge nyt græstæppe på deres 15 år gamle kunstbane. Derudover har klubben et ønske om at opgradere belysningen på deres nye kunstbane samt modernisere den ældre del af klubhuset.",
     "show": "true",
     "cta": "Besøg klubbens hjemmeside",
+    "href": "https://www.roskilde-kfum.dk/",
+    "target": "_blank",
     "images": [
       "/src/assets/images/omos/kfum_1.webp",
       "/src/assets/images/omos/kfum_2.webp",
@@ -120,6 +130,7 @@
     "text_4": "Du skal kunne yde en indsats på 32 timer fordelt på hele festivalperioden, og du vælger selv din vagtplan ved tilmelding. Du har mulighed for at tilmelde dig sammen med dine venner, så I kan arbejde på de samme tidspunkter. Vagterne er fordelt på 3 dage, og fordi vi har åbent til kl. 3.00, skal du være klar på 1-2 sene vagter.",
     "show": "",
     "cta": "",
+    "href": "",
     "images": [
       "/src/assets/images/frivillig/pige_arbejder_2.webp",
       "/src/assets/images/frivillig/bar.webp",
@@ -137,6 +148,7 @@
     "text_2": "Der er masser af forskellige opgaver, som skal løses i en stor madbod, så der findes noget for enhver. Uanset om du trives bedst bag kulissen eller tæt på gæsterne.",
     "show": "",
     "cta": "",
+    "href": "",
     "images": ["/src/assets/images/frivillig/bagomraade.webp"],
     "accordion": [
       { "header": "Madbod", "content": "Hello" },
@@ -153,6 +165,7 @@
     "text_2": "Derudover får du adgang til områder og faciliteter kun for frivillige, hvor du kan spise, slappe af, lade din telefon op.",
     "show": "true",
     "cta": "",
+    "href": "",
     "images": ["/src/assets/images/frivillig/bagomraade.webp"],
     "accordion": [
       { "header": "Mad og drikke", "content": "helllooo" },
@@ -172,6 +185,7 @@
     "text_4": "....",
     "show": "",
     "cta": "",
+    "href": "",
     "images": [
       "/src/assets/images/frivillig/pige_arbejder_2.webp",
       "/src/assets/images/frivillig/bar.webp",
