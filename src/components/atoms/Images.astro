@@ -2,27 +2,43 @@
  import { Image } from 'astro:assets';
 import facaden from "../../assets/images/dummy.jpg";
 
+import section from "../../data/text.json";
 
-const { variant = "", images = []} = Astro.props;
+const { variant = {} } = Astro.props;
 
 ---
 
 <!-- Et enkelt billede -->
-{(variant === "single" && <Image width={600} height={600} src={images[0]} alt="" class="rounded-sm md:rounded-lg aspect-3/4"/>)}
-
+{variant === "single" &&
+  section
+    .filter(item => item.imageVariant === "single" && item.images?.length > 0)
+    .map(item => (
+      <img
+        src={item.images[0]}
+        alt={item.title || "Service image"}
+        class="rounded-sm md:rounded-lg aspect-3/4"
+        width="600"
+        height="600"
+      />
+    ))
+}
 
 <!-- Grid med 4 billeder -->
-{(variant === "grid" && 
+{variant === "grid" && (() => {
+ 
+  const gridItem = section.find(item => item.imageVariant === "grid" && item.images?.length > 0);
+  if (!gridItem) return null;
 
-<article class="grid grid-cols-2 gap-4 lg:gap-6">
-    
-        <Image src={facaden} alt="" class="rounded-xs md:rounded-sm aspect-square"/>
-        <Image src={facaden} alt="" class="rounded-xs md:rounded-sm aspect-square"/>
-        <Image src={facaden} alt="" class="rounded-xs md:rounded-sm aspect-square"/>
-        <Image src={facaden} alt="" class="rounded-xs md:rounded-sm aspect-square"/>
-        
-</article>
-
-
-)}
-
+  return (
+    <article class="grid grid-cols-2 gap-4 lg:gap-6">
+      {gridItem.images.map((img, index) => (
+        <img
+          key={index}
+          src={img}
+          alt={gridItem.title || `Grid image ${index + 1}`}
+          class="rounded-xs md:rounded-sm aspect-square object-cover"
+        />
+      ))}
+    </article>
+  );
+})()}

@@ -1,23 +1,26 @@
 [
   {
-    "id": 1,
-    "layout": "image-left",
-    "imageVariant": "single",
-    "textVariant": "simple",
-    "title": "Historien bag",
-    "text_1": "Bag historien om DIXI Burger gemmer der sig fortællingen om en gruppe fra KFUM’s Boldklub Roskilde, som lod sig inspirere af den pulserende kultur i New Orleans til at skabe en madbod på Roskilde Festival.",
-    "text_2": "Det, der begyndte som et initiativ for at støtte byggeriet af et klubhus, udviklede sig til et engageret netværk af frivillige. Til sammen har deres indsats ført til en betydelig succes med et økonomisk overskud, som blev kanaliseret til klubhusets færdiggørelse og andre store projekter i boldklubben.",
-    "test": "true",
-    "cta": "Læs mere om os",
-    "images": ["/src/assets/images/forside/pige_arbejder.webp"]
+    "id": 0,
+    "layout": "",
+    "imageVariant": "",
+    "textVariant": "",
+    "title": "",
+    "text_1": "",
+    "text_2": "",
+    "show": "true",
+    "cta": "",
+    "images": ["/images/1.jpg"]
   },
   {
-    "id": 2,
-    "layout": "image-right",
-    "imageVariant": "grid",
-    "textVariant": "accordion",
-    "title": "Vores team",
-    "text": "Mød teamet",
+    "id": 0,
+    "layout": "",
+    "imageVariant": "",
+    "textVariant": "",
+    "title": "",
+    "text_1": "",
+    "text_2": "",
+    "show": "true",
+    "cta": "",
     "images": [
       "/images/1.jpg",
       "/images/2.jpg",
@@ -25,9 +28,79 @@
       "/images/4.jpg"
     ],
     "accordion": [
-      { "header": "Hej med dig", "content": "tutteu" },
-      { "header": "CTO", "content": "Navn" },
-      { "header": "Hej med dig", "content": "tutteu" }
+      { "header": "", "content": "" },
+      { "header": "", "content": "" },
+      { "header": "", "content": "" }
     ]
+  },
+  {
+    "id": 1,
+    "layout": "image-left",
+    "imageVariant": "single",
+    "textVariant": "simple",
+    "title": "Historien bag",
+    "text_1": "Bag historien om DIXI Burger gemmer der sig fortællingen om en gruppe fra KFUM’s Boldklub Roskilde, som lod sig inspirere af den pulserende kultur i New Orleans til at skabe en madbod på Roskilde Festival.",
+    "text_2": "Det, der begyndte som et initiativ for at støtte byggeriet af et klubhus, udviklede sig til et engageret netværk af frivillige. Til sammen har deres indsats ført til en betydelig succes med et økonomisk overskud, som blev kanaliseret til klubhusets færdiggørelse og andre store projekter i boldklubben.",
+    "show": "true",
+    "cta": "Læs mere om os",
+    "images": ["/src/assets/images/forside/pige_arbejder.webp"]
+  },
+  {
+    "id": 2,
+    "layout": "image-right",
+    "imageVariant": "grid",
+    "textVariant": "simple",
+    "title": "Bliv en del af Dixi",
+    "text_1": "Som frivillig hos Dixi Burger bliver du en del af et hold med over 350 frivillige. Du arbejder side om side med frivillige i alle aldre, og oplever festivalen fra et helt unikt perspektiv. ",
+    "text_2": "Derudover for du som frivillig en masse fordele såsom adgang til festivallens frivillig-områder, forplejning, og mulighed for at deltage i sociale aktiviteter med dine med frivillige.",
+    "show": "true",
+    "cta": "Læs mere om at være frivillig",
+    "images": [
+      "/src/assets/images/forside/stemning_madbod.webp",
+      "/src/assets/images/forside/pige_samler_burger.webp",
+      "/src/assets/images/forside/boeffer.webp",
+      "/src/assets/images/forside/betjening.webp"
+    ]
+  },
+  {
+    "id": 3,
+    "layout": "",
+    "imageVariant": "",
+    "textVariant": "",
+    "title": "Hvem er vi?",
+    "text_1": "Dixi Burger er en foreningsdrevet madbod, som har været en del af Roskilde Festival siden år 2010, men vores rødder strækker sig helt tilbage til KFUM’s Boldklub Roskildes første deltagelse i 1971.",
+    "text_2": "Vi er kendt for vores kreolsk inspirerede festivalburger med et spicy kick, der skiller sig ud i mængden. Foretrækker du et kødfrit alternativ, tilbyder vi også vores Vexi-burger, med samme karakteristiske smag.",
+    "text_3": "Hos Dixi Burger handler det dog om mere end god mad. Når du køber en burger hos os, støtter du samtidig KFUM’s Boldklub Roskilde.Hos Dixi Burger handler det dog om mere end god mad. Når du køber en burger hos os, støtter du samtidig KFUM’s Boldklub Roskilde.",
+    "show": "",
+    "cta": "",
+    "images": ["/images/1.jpg"]
+  },
+  {
+    "id": 4,
+    "layout": "",
+    "imageVariant": "",
+    "textVariant": "",
+    "title": "Vores historie",
+    "text_1": "Historien om Dixi Burger er en fortælling om, hvordan en gruppe engagerede individer fra KFUM's Boldklub Roskilde lod sig inspirere af den pulserende kultur i New Orleans til at skabe en madbod på Roskilde Festival.",
+    "text_2": "Deres mål var at støtte byggeriet af klubhuset ved at servere kreolsk-inspireret mad og skabe en festlig stemning, der hyldede mangfoldigheden og musikken på festivalen.",
+    "text_3": "Med deres passion for kvalitetsmad og engagement i klubben etablerede de Dixi Burger, og skabte et stærkt netværk af frivillige til at gennemføre deres vision.",
+    "text_4": "Deres indsats førte til en betydelig succes med et økonomisk overskud, som blev kanaliseret til klubhusets færdiggørelse og andre store projekter i boldklubben.",
+    "show": "",
+    "cta": "",
+    "images": ["/images/1.jpg"]
+  },
+  {
+    "id": 4,
+    "layout": "",
+    "imageVariant": "",
+    "textVariant": "",
+    "title": "Hvad støtter vi?",
+    "text_1": "De penge, som vi hvert år tjener gennem vores arbejde på Roskilde Festival, går ubeskåret til at støtte KFUM’s Boldklub Roskilde. Vi arbejder for at forbedre fodboldklubben og dens sportslige faciliteter, og ikke mindst for at opretholde klubbens høje aktivitetsniveau. ",
+    "text_2": "Hvert år fordeles overskuddet mellem KFUM’s Boldklub Roskilde og Byggefonden. Byggefonden blev etableret i 1973 med henblik på at skaffe økonomiske midler til etablering af anlæg og klubhus på Lillevang, og bevilger dermed ikke midler til driftsmæssige formål. Du kan læse den lovpligtige redegørelse om fondsledelse her. ",
+    "text_3": "For KFUM er den økonomiske støtte uvurderlig. Støtten er blevet afgørende for klubben, og er blevet anvendt til alt lige fra fodboldture for trængende unge mennesker til opgraderinger af tribunerne, klubhus-udvidelser og køb af forskelligt udstyr.",
+    "text_4": "Fremadrettet har klubben planer om at lægge nyt græstæppe på deres 15 år gamle kunstbane. Derudover har klubben et ønske om at opgradere belysningen på deres nye kunstbane samt modernisere den ældre del af klubhuset.",
+    "show": "true",
+    "cta": "Besøg klubbens hjemmeside",
+    "images": ["/images/1.jpg"]
   }
 ]

@@ -4,45 +4,39 @@ import Accordion from '../atoms/Accordion.astro';
 
 import section from "../../data/text.json";
 
-const { overskrift = {}, variant = "", show="", button_text = "" } = Astro.props;
-
 const testing = ["accordion_header", "accordion_content", "accordion_header_2", "accordion_content_2"];
 
-const textFields = ["text_1", "text_2", "text_3", "text_4", "text_5"];
+const { data = {} } = Astro.props;
+const { title, text_1, text_2, text_3, text_4, text_5, cta, textVariant, show } = data;
 
 ---
 
  <!-- Text variant = simple  -->
- {(variant === "simple" && 
+ {(textVariant === "simple" && 
 <article class="">
-    <h2 class="heading-large pb-6 md:pb-8">{overskrift.title}</h2>
+    <h2 class="heading-large pb-6 md:pb-8">{title}</h2>
+    <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_1}</p>
+    <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_2}</p>
+    <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_3}</p>
+    <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_4}</p>
+    <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_5}</p>
 
-{section.map((item) => (
-  <>
-    {textFields.map((key) => item[key] && (
-      <p class="body-base pb-2 md:pb-4 text-text-secondary">{item[key]}</p>
-    ))}
-  </>
-))}
-
-   {(show === "true" &&  <div class="pt-8 md:pt-12"><Link variant = "ButtonSecondary" size ="large">{button_text}</Link></div>)}
+   {(show === "true" &&  <div class="pt-8 md:pt-12"><Link variant = "ButtonSecondary" size ="large">{cta}</Link></div>)}
 </article> )}
 
 
 
 
  <!-- Text variant = accordion  -->
-{(variant === "accordion" && 
+{(textVariant === "accordion" && 
 <article class="flex flex-col justify-between h-full">
   <div>
-      <h2 class="heading-large pb-6 md:pb-8">{overskrift.title}</h2>
- {section.map((item) => (
-  <>
-    {textFields.map((key) => item[key] && (
-      <p class="body-base pb-2 md:pb-4 text-text-secondary">{item[key]}</p>
-    ))}
-  </>
-))}
+      <h2 class="heading-large pb-6 md:pb-8">{title}</h2>
+      <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_1}</p>
+      <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_2}</p>
+      <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_3}</p>
+      <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_4}</p>
+      <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_5}</p>
   </div>
 
  <div>
@@ -59,5 +53,6 @@ const textFields = ["text_1", "text_2", "text_3", "text_4", "text_5"];
      
  </div>
 </article> )}
+
 
 

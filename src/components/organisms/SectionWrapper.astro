@@ -4,25 +4,24 @@ import Text from '../../components/molecyles/Text.astro';
 
 import textSections from "../../data/text.json";
 
+const { sectionId = 1} = Astro.props;
 
-// layout = TextLeft | TextRight
-// img_variant = single | grid
-// text_variant = simple | accordion
-const { layout = "", img_variant="", text_variant="", sectionId = 1} = Astro.props;
 
 const layoutVariant = {
-  TextLeft: "order-none",
-  TextRight: "order-2",
+  "image-right": "order-none",   // tekst til venstre, billede til højre
+  "image-left": "order-2",     // tekst til højre, billede til venstre
 };
 
 
 // Hent sektionen med det rigtige ID
 const sectionData = textSections.find(s => s.id === sectionId);
+
+const layoutFromJson = sectionData?.layout === "image-right" ? "image-right" : "image-left";
 ---
 
 <section class="section-main grid grid-cols-2 gap-6 lg:gap-20">
-<div class:list={[layoutVariant[layout]]} class="h-full  flex items-center">
-    <Text overskrift={sectionData} variant={text_variant} show={sectionData.test} button_text={sectionData.cta} /> 
+<div class:list={[layoutVariant[layoutFromJson]]} class="h-full flex items-center">
+    <Text data={sectionData}   /> 
 </div>
-<div><Images variant={img_variant} images={sectionData.images} /></div>
+<div><Images variant={sectionData.imageVariant} img={sectionData} /></div>
 </section>
