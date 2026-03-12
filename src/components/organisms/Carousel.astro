@@ -1,5 +1,105 @@
 ---
+import { Image } from 'astro:assets';
+import facade from "../../assets/images/forside/facaden.webp";
+import arrowRight from "../../assets/svg/arrow_right.svg";
+import arrowLeft from "../../assets/svg/arrow_left.svg";
 
 ---
 
-<div>Text</div>
+<div x-data>
+  
+   <!-- Carusel article -->
+  <article x-ref="carousel" id="carousel" class="overflow-x-auto snap-x snap-mandatory">
+    <div  class="flex items-center min-w-full h-full gap-4 md:gap-6 pr-4">
+      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2"  />
+      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2"  />
+      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2"  />
+      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2"  />
+    </div>
+  </article>
+   <!-- Carusel article slut -->
+  
+  <article class="flex justify-between items-center pt-2">
+   <!-- Pagination dots -->
+    <div class="flex gap-2">
+      <span class="w-2 h-2 bg-text-primary rounded-full"></span>
+      <span class="w-2 h-2 bg-text-primary rounded-full"></span>
+      <span class="w-2 h-2 bg-text-primary rounded-full"></span>
+      <span class="w-2 h-2 bg-text-primary rounded-full"></span>
+    </div>
+  
+      <!-- Pile -->
+    <div class="flex gap-4">
+         <Image src={arrowLeft} alt="Instagram billeder" class="cursor-pointer" @click="$refs.carousel.scrollBy({ left: -900, behavior: 'smooth' })" />
+         <Image src={arrowRight} alt="Instagram billeder" class="cursor-pointer" @click="$refs.carousel.scrollBy({ left: 900, behavior: 'smooth' })" />
+      </div>
+  </article>
+  
+</div>
+
+ <!-- CSS -->
+<style>
+  /* Skjul scrollbar, men bevar scroll-funktionalitet */
+  #carousel::-webkit-scrollbar {
+    display: none; /* Skjul scrollbar i Webkit-browsere (Chrome, Safari) */
+  }
+
+  #carousel {
+    -ms-overflow-style: none; /* Skjul scrollbar i Internet Explorer 10+ */
+    scrollbar-width: none; /* Skjul scrollbar i Firefox */
+  }
+
+
+   
+
+
+
+/* 
+  .pagination-button {
+  width: 8px;
+  height: 8px;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  }
+  
+  .pagination-button::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: var(--base-sizing-sm);
+    height: var(--base-sizing-sm);
+    margin: auto;
+    border: 2px solid var(--color-dot);
+    border-radius: 50%;
+    transform: scale(1);
+    transition: transform 120ms cubic-bezier(0.25, 0.1, 0.25, 1), opacity 40ms cubic-bezier(0.25, 0.5, 0, 1);
+    opacity: 0.575;
+  }
+  
+  .pagination-button:hover {
+    &::before {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+  
+  .pagination-button.active {
+    &::before {
+      transform: scale(0);
+      transition: transform 150ms cubic-bezier(0, 0, 0.25, 1);
+    }
+  }
+  
+  .pagination-button:active {
+    ~ .pagination-current {
+      &::before {
+        transform: scale(1.5, 0.8);
+        transition: transform 100ms cubic-bezier(0, 0, 0.5, 1);
+      }
+    }
+  } */
+
+</style>
