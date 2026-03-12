@@ -2,14 +2,15 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/organisms/Hero.astro";
 import SectionWrapper from "../components/organisms/SectionWrapper.astro";
+import CTABanner from "../components/organisms/CTABanner.astro";
 
 ---
 
 
 <MainLayout title="Titel" description="beskrivelse" og:title="beskrivelse" og:description="beskrivelse">
-    <Hero overskrift="Frivillig hos Dixi" bgImage="dummy.jpg"  />
+    <Hero overskrift="Frivillig hos Dixi" bgImage="/forside/stemning_madbod"  />
     <SectionWrapper  sectionId={6} />
     <SectionWrapper  sectionId={7} />
     <SectionWrapper  sectionId={8} />
-	
+	 <CTABanner/>
 </MainLayout>
