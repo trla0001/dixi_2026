@@ -9,9 +9,9 @@ const { header, text, items } = data;
   <article class="body-small pt-8 md:pr-[25%]">
   {text &&  <p class="body-base text-text-secondary pb-4">{text}</p>}
   {items && items.length > 0 && (
-  <ul class="body-base text-text-secondary">
+  <ul class="body-base text-text-secondary pl-4">
     {items.map(item => (
-      <li class="pb-2">{item}</li>
+      <li class="list-disc pb-2">{item}</li>
     ))}
   </ul>
 )}
