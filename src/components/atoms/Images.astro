@@ -11,42 +11,47 @@ const { imageVariant, images = [] } = data;
 )}
 
 
+
+
+
 <!-- {imageVariant === "grid" && (
   <div class="grid grid-cols-2 gap-4">
     {images.map((image) => (
       <img src={image.src} alt={image.alt} class="rounded-xs md:rounded-sm aspect-square object-cover" />
     ))}
   </div>
-)} -->
+)}  -->
 
 {imageVariant === "grid" && (
-  <div class="grid grid-cols-2 gap-4">
-    
-    <img
-      src={images[0].src}
-      alt={images[0].alt}
-      class="w-full h-full aspect-square object-cover rounded-xs md:rounded-sm"
-    />
+  <div class="grid grid-cols-1 gap-4 md:gap-6">
 
-    <img
-      src={images[1].src}
-      alt={images[1].alt}
-      class="h-3/4 w-3/4 aspect-square object-cover rounded-xs md:rounded-sm self-end"
-    />
+    <div class="row-start-1 grid grid-cols-[424fr_257fr] gap-4 md:gap-6">
+      <img
+        src={images[0].src}
+        alt={images[0].alt}
+        class="aspect-square object-cover rounded-xs md:rounded-sm"
+      />
 
-   <div class="flex justify-end items-start">
+      <img
+        src={images[1].src}
+        alt={images[1].alt}
+        class="aspect-square object-cover rounded-xs md:rounded-sm self-end"
+      />
+    </div>
+
+    <div class="row-start-2 grid grid-cols-[257fr_424fr] gap-4 md:gap-6">
       <img
         src={images[2].src}
         alt={images[2].alt}
-        class="h-3/4 w-3/4 aspect-square object-cover rounded-xs md:rounded-sm"
+        class="aspect-square object-cover rounded-xs md:rounded-sm"
       />
-   </div>
 
-    <img
-      src={images[3].src}
-      alt={images[3].alt}
-      class="w-full h-full aspect-square object-cover rounded-xs md:rounded-sm"
-    />
+      <img
+        src={images[3].src}
+        alt={images[3].alt}
+        class="aspect-square object-cover rounded-xs md:rounded-sm"
+      />
+    </div>
 
   </div>
 )}
