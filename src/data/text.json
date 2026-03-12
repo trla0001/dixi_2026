@@ -207,8 +207,14 @@
   }
 ],
     "accordion": [
-      { "header": "Madbod", "content": "I madboden vil du typisk arbejde med én eller flere af disse opgaver: Tilberedning af Dixi Burgere, Vexi-burgere og airfryer fries - Produktion af salsa, snitning af salat og ristning af boller - Samle og pakke burgeren.  Fyldning af samleborde og løbende opvask. Opfyldning af varer og holde boden ren og indbydende. Vi sørger for, at alle hjælper med det, de kan lide, og at holdet altid dækker opgaverne sammen." },
-      { "header": "Service", "content": "Hello" }
+      { "header": "Madbod", 
+      "text": "I madboden vil du typisk arbejde med én eller flere af disse opgaver: ",
+    "items": [
+      "items",
+      "items",
+      "items"
+    ] },
+      { "header": "Service", "text": "Hello" }
     ]
   },
   {
@@ -228,10 +234,16 @@
     "alt": "Stemnings billede fra Dixi's bagområde"
   }
 ],
-    "accordion": [
-      { "header": "Mad og drikke", "content": "helllooo" },
-      { "header": "Dixi's bagområde", "content": "jvjvjvj" },
-      { "header": "Roskilde Festival's Volunteer Village", "content": "fjjgjj" }
+
+ "accordion": [
+      { "header": "Mad og drikke", 
+      "text": "I madboden vil du typisk arbejde med én eller flere af disse opgaver: ",
+    "items": [
+      "items",
+      "items",
+      "items"
+    ] },
+      { "header": "Dixi's bagområde", "text": "Hello" }
     ]
   },
   {

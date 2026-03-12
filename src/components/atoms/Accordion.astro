@@ -1,13 +1,20 @@
 ---
 const { data } = Astro.props;
-const { header, content } = data;
+const { header, text, items } = data;
 
 ---
 
 <details class="py-6 px-4 border-b border-b-border-primary hover:bg-background-secondary">
   <summary class="body-large font-medium cursor-pointer flex justify-between">{header}</summary>
   <article class="body-small pt-8 md:pr-[25%]">
-   <p class="body-base text-text-secondary">{content}</p>
+  {text &&  <p class="body-base text-text-secondary pb-4">{text}</p>}
+  {items && items.length > 0 && (
+  <ul class="body-base text-text-secondary">
+    {items.map(item => (
+      <li class="pb-2">{item}</li>
+    ))}
+  </ul>
+)}
   </article>
 </details>
 
