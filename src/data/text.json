@@ -278,5 +278,26 @@
     "alt": ""
   }
 ]
+  },
+  {
+    "id": 10,
+    "layout": "image-right",
+    "imageVariant": "grid",
+    "textVariant": "simple",
+    "title": "Har du spørgsmål?",
+    "text_1": "Har du spørgsmål om Dixi Burger, eller muligheder som frivillig? Er du meget velkommen til at sende os en mail.",
+    "text_2": "",
+    "text_3": "",
+    "text_4": "",
+    "show": "",
+    "cta": "",
+    "href": "",
+
+    "images": [
+      {
+        "src": "src/assets/images/kontakt/facade_2.webp",
+        "alt": "Hello"
+      }
+    ]
   }
 ]
