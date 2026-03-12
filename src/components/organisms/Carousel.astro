@@ -6,37 +6,41 @@ import arrowLeft from "../../assets/svg/arrow_left.svg";
 
 ---
 
-<div x-data="{ active: 0 }" @scroll.debounce="active = Math.round($refs.carousel.scrollLeft / $refs.carousel.clientWidth)">
-  
-   <!-- Carusel article -->
-  <article x-ref="carousel" id="carousel" class="overflow-x-auto snap-x snap-mandatory">
-    <div  class="flex items-center min-w-full h-full gap-4 md:gap-6 pr-4">
-      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2 snap-start shrink-0"  />
-      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2 snap-start shrink-0"  />
-      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2 snap-start shrink-0"  />
-      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2 snap-start shrink-0"  />
-    </div>
-  </article>
-   <!-- Carusel article slut -->
-  
-  <article class="flex justify-between items-center pt-2">
-   <!-- Pagination dots -->
-    <div class="flex gap-2">
-  <template x-for="(i, index) in 4" :key="index">
-    <span class="w-2 h-2 rounded-full bg-text-primary"
-          :class="active === index ? 'opacity-100' : 'opacity-50'"></span>
-  </template>
- </div>
-  
-      <!-- Pile -->
-    <div class="flex gap-4">
-         <Image src={arrowLeft} alt="Instagram billeder" class="cursor-pointer" @click="$refs.carousel.scrollBy({ left: -900, behavior: 'smooth' })" />
-         <Image src={arrowRight} alt="Instagram billeder" class="cursor-pointer" @click="$refs.carousel.scrollBy({ left: 900, behavior: 'smooth' })" />
-      </div>
-  </article>
-  
-</div>
+<section class="pl-30 py-30">
+    <h2 class="heading-large pb-8 md:pb-20">Hello</h2>
 
+  
+  <div x-data="{ active: 0 }" @scroll.debounce="active = Math.round($refs.carousel.scrollLeft / $refs.carousel.clientWidth)">
+     <!-- Carusel article -->
+    <article x-ref="carousel" id="carousel" class="overflow-x-auto snap-x snap-mandatory">
+      <div  class="flex items-center min-w-full h-full gap-4 md:gap-6 pr-4">
+        <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2 snap-center shrink-0"  />
+        <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2 snap-center shrink-0"  />
+        <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2 snap-center shrink-0"  />
+        <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2 snap-center shrink-0"  />
+      </div>
+    </article>
+     <!-- Carusel article slut -->
+    
+    <article class="flex justify-between items-center pt-8 pr-30">
+     <!-- Pagination dots -->
+      <div class="flex gap-2">
+    <template x-for="(i, index) in 4" :key="index">
+      <span class="w-2 h-2 rounded-full bg-text-primary"
+            :class="active === index ? 'opacity-100' : 'opacity-50'"></span>
+    </template>
+   </div>
+    
+        <!-- Pile -->
+      <div class="flex gap-4">
+           <Image src={arrowLeft} alt="Instagram billeder" class="cursor-pointer" @click="$refs.carousel.scrollBy({ left: -400, behavior: 'smooth' })" />
+           <Image src={arrowRight} alt="Instagram billeder" class="cursor-pointer" @click="$refs.carousel.scrollBy({ left: 400, behavior: 'smooth' })" />
+        </div>
+    </article>
+    
+  </div>
+  
+</section>
  <!-- CSS -->
 <style>
   /* Skjul scrollbar, men bevar scroll-funktionalitet */
