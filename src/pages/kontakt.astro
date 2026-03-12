@@ -1,14 +1,44 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/organisms/Hero.astro";
-import SectionWrapper from "../components/organisms/SectionWrapper.astro";
+import Link from "../components/atoms/Link.astro";
+import CTABanner from "../components/organisms/CTABanner.astro";
 
 
+import { Image } from 'astro:assets';
+import facaden from "../assets/images/kontakt/facade_2.webp";
+
+import facebook from "../assets/svg/facebook.svg";
+import instagram from "../assets/svg/instagram.svg";
 ---
 
 
 <MainLayout title="Titel" description="beskrivelse" og:title="beskrivelse" og:description="beskrivelse">
  <Hero overskrift="Om os" bgImage="/kontakt/facade_2"  />
-    <SectionWrapper sectionId={10} />
-	
+    <section class="section-main md:grid md:grid-cols-2 md:gap-6 lg:gap-20">
+        <article class="pb-8 md:pb-0 flex flex-col justify-center">
+            <h2 class="heading-large pb-6 md:pb-8">Har du spørgsmål?</h2>
+            <p class="body-base text-text-secondary">Har du spørgsmål om Dixi Burger, eller muligheder som frivillig? Er du meget velkommen til at sende os en mail.</p>
+            <div class="pt-8 md:pt-10">
+                <p class="body-base pb-4 md:pt-6 text-text-secondary">Email</p>
+                <Link href="mailto:tilmelding@kfumfestival.dk" variant="TextLink" target="_blank">tilmelding@kfumfestival.dk</Link>
+            </div>
+          <div class="pt-8 md:pt-10">
+                <p class="body-base pb-4 md:pt-6 text-text-secondary">Åbningstider</p>
+                <p class="body-base  text-text-secondary">Alle 8 dage under festivallen fra kl. 09:00 til 03:00</p>
+          </div>
+            <div class="pt-8 md:pt-10">
+                <p class="body-base pt-2 pb-4 md:pt-6 text-text-secondary">Sociale Medier</p>
+    
+               <div class="flex gap-4 md:gap-6">
+                   <a href="https://www.facebook.com/DixiBurgerRF/" target="_blank"><Image src={facebook} alt="Facebook ikon"/></a>
+                    <a href="https://www.instagram.com/dixi.burger?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><Image src={instagram} alt="Instagram ikon"/></a>
+             
+               </div>
+            </div>
+            
+        </article>
+        <Image src={facaden} alt="Billede af Dixi Burger madbodens facade"/>
+    </section>
+	<CTABanner/>
 </MainLayout>

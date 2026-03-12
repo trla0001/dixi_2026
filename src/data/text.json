@@ -282,7 +282,7 @@
   {
     "id": 10,
     "layout": "image-right",
-    "imageVariant": "grid",
+    "imageVariant": "single",
     "textVariant": "simple",
     "title": "Har du spørgsmål?",
     "text_1": "Har du spørgsmål om Dixi Burger, eller muligheder som frivillig? Er du meget velkommen til at sende os en mail.",
@@ -295,7 +295,7 @@
 
     "images": [
       {
-        "src": "../assets/images/frivillig/burger_laves.webp",
+        "src": "src/assets/images/kontakt/facade_2.webp",
         "alt": "Hello"
       }
     ]
