@@ -6,15 +6,15 @@ import arrowLeft from "../../assets/svg/arrow_left.svg";
 
 ---
 
-<div x-data>
+<div x-data="{ active: 0 }" @scroll.debounce="active = Math.round($refs.carousel.scrollLeft / $refs.carousel.clientWidth)">
   
    <!-- Carusel article -->
   <article x-ref="carousel" id="carousel" class="overflow-x-auto snap-x snap-mandatory">
     <div  class="flex items-center min-w-full h-full gap-4 md:gap-6 pr-4">
-      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2"  />
-      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2"  />
-      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2"  />
-      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2"  />
+      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2 snap-start shrink-0"  />
+      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2 snap-start shrink-0"  />
+      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2 snap-start shrink-0"  />
+      <Image src={facade} alt="Instagram billeder" class="object-cover rounded-sm md:rounded-lg w-1/2 snap-start shrink-0"  />
     </div>
   </article>
    <!-- Carusel article slut -->
@@ -22,11 +22,11 @@ import arrowLeft from "../../assets/svg/arrow_left.svg";
   <article class="flex justify-between items-center pt-2">
    <!-- Pagination dots -->
     <div class="flex gap-2">
-      <span class="w-2 h-2 bg-text-primary rounded-full"></span>
-      <span class="w-2 h-2 bg-text-primary rounded-full"></span>
-      <span class="w-2 h-2 bg-text-primary rounded-full"></span>
-      <span class="w-2 h-2 bg-text-primary rounded-full"></span>
-    </div>
+  <template x-for="(i, index) in 4" :key="index">
+    <span class="w-2 h-2 rounded-full bg-text-primary"
+          :class="active === index ? 'opacity-100' : 'opacity-50'"></span>
+  </template>
+ </div>
   
       <!-- Pile -->
     <div class="flex gap-4">
