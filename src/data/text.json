@@ -100,7 +100,7 @@
     "images": [
   {
     "src": "src/assets/images/omos/facade_2.webp",
-    "alt": "Frivillig der vender bacon på panden i Dixi Burger madboden"
+    "alt": "Billede af facaden"
   }
 ]
   },
@@ -119,8 +119,8 @@
     "href": "",
      "images": [
   {
-    "src": "src/assets/images/omos/facade_2.webp",
-    "alt": "Frivillig der vender bacon på panden i Dixi Burger madboden"
+    "src": "src/assets/images/forside/facaden.webp",
+    "alt": "Billede af facaden forfra"
   }
 ]
   },
