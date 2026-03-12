@@ -295,7 +295,7 @@
 
     "images": [
       {
-        "src": "src/assets/images/kontakt/facade_2.webp",
+        "src": "../assets/images/frivillig/burger_laves.webp",
         "alt": "Hello"
       }
     ]
