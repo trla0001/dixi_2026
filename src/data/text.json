@@ -210,9 +210,9 @@
       { "header": "Madbod", 
       "text": "I madboden vil du typisk arbejde med én eller flere af disse opgaver: ",
     "items": [
-      "items",
-      "items",
-      "items"
+      "Tilberedning af burgere og fries",
+      "Samle og pakke burgeren",
+      "Fyldning af samleborde og løbende opvask"
     ] },
       { "header": "Service", "text": "Hello" }
     ]
