@@ -5,17 +5,19 @@ const { href = "#", target = "_self", variant = "", size = "" } = Astro.props;
 const linkStyling = "";
 
 const variantClasses = {
-  ButtonPrimary: "block text-center rounded-full body-base text-text-brand-dark hover:text-text-brand-light bg-background-brand-primary hover:bg-background-brand-secondary ",
+  ButtonPrimary: " block text-center rounded-full body-base text-text-brand-dark hover:text-text-brand-light bg-background-brand-primary hover:bg-background-brand-secondary ",
   ButtonSecondary: "text-center rounded-full body-base text-text-primary outline outline-border-primary hover:bg-background-secondary ",
   ButtonInverted: "text-center rounded-full body-base text-text-alternate hover:text-text-primary bg-background-alternate hover:bg-transparent hover:outline hover:outline-border-secondary ",
   NavLink: "inline-block body-base text-text-primary no-underlin hover:border-b  hover:border-border-brand",
-  TextLink: "body-small text-text-secondary underline hover:text-text-brand-light",
+  TextLink: "text-text-secondary underline hover:text-text-brand-light",
 };
 
 const sizeClasses = {
   large: "py-3 px-7",
   medium: "py-2 px-6",
-  base: "py-4 md:py-6",
+  small: "py-4 md:py-6",
+  textbase: "body-base",
+  textsmall: "body-small"
 };
 
 // Tjek om linket er aktivt

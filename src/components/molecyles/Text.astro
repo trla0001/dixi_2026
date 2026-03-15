@@ -4,7 +4,7 @@ import Accordion from '../atoms/Accordion.astro';
 
 
 const { data = {} } = Astro.props;
-const { title, text_1, text_2, text_3, text_4, text_5, cta, textVariant, show, href, target } = data;
+const { title, text_1, text_2, text_3, text_4, text_5, cta, textVariant, show, href, target, link } = data;
 
 ---
 
@@ -13,7 +13,8 @@ const { title, text_1, text_2, text_3, text_4, text_5, cta, textVariant, show, h
 <article class="pb-8 md:pb-0">
     <h2 class="heading-large pb-6 md:pb-8">{title}</h2>
    {text_1 && <p class="body-base text-text-secondary">{text_1}</p>}
-   {text_2 && <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_2}</p>}
+   {text_2 && <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_2} {link &&<Link variant="TextLink" size="textbase" target="_blank" href="https://www.dixieburger.dk/download/skematilrapportering.pdf" class="body-base text-text-secondary">{link}</Link>}</p>}
+    <p ></p>
    {text_3 && <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_3}</p>}
    {text_4 && <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_4}</p>}
    {text_5 && <p class="body-base pt-2 md:pt-4 text-text-secondary">{text_5}</p>}
