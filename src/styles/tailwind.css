@@ -106,7 +106,7 @@
 
 
  .section-main {
-    @apply px-6 py-12 md:px-6 md:py-20 lg:px-30 lg:py-30;
+    @apply px-6 pb-12 md:px-6 md:pb-20 lg:px-30 lg:pb-30;
   }
 }
 
