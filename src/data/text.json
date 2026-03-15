@@ -59,7 +59,7 @@
     "layout": "image-right",
     "imageVariant": "grid",
     "textVariant": "simple",
-    "title": "Bliv en del af Dixi",
+    "title": "En del af et fællesskab",
     "text_1": "Som frivillig hos Dixi Burger bliver du en del af et hold med over 350 frivillige. Du arbejder side om side med frivillige i alle aldre, og oplever festivalen fra et helt unikt perspektiv. ",
     "text_2": "Derudover for du som frivillig en masse fordele såsom adgang til festivallens frivillig-områder, forplejning, og mulighed for at deltage i sociale aktiviteter med dine med frivillige.",
     "show": "true",
@@ -237,15 +237,33 @@
 ],
 
  "accordion": [
-      { "header": "Mad og drikke", 
-      "text": "I madboden vil du typisk arbejde med én eller flere af disse opgaver: ",
-    "items": [
-      "items",
-      "items",
-      "items"
-    ] },
-      { "header": "Dixi's bagområde", "text": "Hello" }
-    ]
+   {
+     "header": "Dixi's bagområde",
+     "text": "Som frivillig ved Dixi Burger får du selvfølgelig forplejning på alle dine vagter. Du får også et stempelkort til mad og drikke, som du frit kan i løbet af festivalen - også på dage, hvor du ikke har vagt. Derudover får du adgang til vores helt eget Dixi-bagområde, hvor der under hele festivalen tilbydes:",
+     "items": [
+       "Mobilopladning",
+       "Rene toiletter",
+       "Rugbrød og pålæg",
+       "Kaffe, the og saft",
+       "Frugt og chips",
+       "Billig bar",
+       "Aktiviteter",
+       "... og mange andre gode ting"
+     ]
+   },
+   {
+     "header": "Roskilde Festival's egne fordele",
+     "text": "Som frivillig på Roskilde Festival, får du mulighed for at opleve en anden side af dét at gå på festival. Udover et partoutarmbånd til Roskilde Festival, tilbydes blandt andet:",
+     "items": [
+       "Adgang til Roskilde Festivals frivilligområde Volunteers’ Village. Her har du bl.a. adgang til gratis wi-fi, kaffe, te, saft og en frivilligbar med DJ’s og bands. ",
+       "Trænger du til at lade op, kan du også kigge forbi Volunteer’s Village helt eget wellnessområde, hvor du kan få gratis massage og dyrke yoga. ",
+       "Mulighed for tilmelding til Volunteer Camping på banerne ved Darup Idrætscenter, der giver nattero og adgang til gratis varme bade. ",
+       "Gratis shuttlebusser. ",
+       "Volunteer Hubs i East og West, hvor der både er gratis drikkevarer, adgang til toiletter og gratis varme bade. Se mere på roskilde-festival.dk. ",
+       "Adgang til pre-sale af officielt Roskilde-merch til nedsatte priser. "
+     ]
+   }
+ ]
   },
   {
     "id": 9,
