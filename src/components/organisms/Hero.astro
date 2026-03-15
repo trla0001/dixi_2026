@@ -5,7 +5,10 @@ const bgImagePath = `src/assets/images/${bgImage}.webp`;
 ---
 <section
   style={`background-image: url('${bgImagePath}');`}
-  class="min-h-103 md:min-h-138 h-[48vh] bg-bottom bg-cover flex">
-  <h1 class="heading-display p-6 md:p-30 self-end">{overskrift}</h1>
+  class="relative min-h-103 md:min-h-138 h-[48vh] bg-center bg-cover flex">
+       <div class="absolute inset-0 bg-background-primary opacity-40 z-0"></div>
+  
+       <h1 class="heading-display p-6 md:p-30 self-end relative z-10">{overskrift}</h1>
+
 </section>
 
