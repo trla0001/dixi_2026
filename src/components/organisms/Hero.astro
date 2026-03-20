@@ -1,14 +1,64 @@
 ---
-const { overskrift = "", bgImage = "" } = Astro.props;
+import { Image } from 'astro:assets';
 
-const bgImagePath = `src/assets/images/${bgImage}.webp`;
+// Lokale billeder (ingen fetch)
+import frivillig from "../../assets/images/forside/stemning_madbod.webp";
+import om from "../../assets/images/forside/pige_arbejder.webp";
+import kontakt from "../../assets/images/kontakt/facade_2.webp";
+
+// Props
+const { image = "frivillig", overskrift = "" } = Astro.props;
+
+// Map image-name -> billede + position
+const images = {
+  frivillig: { src: frivillig, position: "center" },
+  om: { src: om, position: "center 90%" },
+  kontakt: { src: kontakt, position: "center 30%" },
+};
+
+// Vælg billede, fallback til frivillig
+const selected = images[image] ?? images.frivillig;
 ---
-<section
-  style={`background-image: url('${bgImagePath}');`}
-  class="relative min-h-103 md:min-h-138 h-[48vh] bg-center bg-cover flex">
-       <div class="absolute inset-0 bg-background-primary opacity-40 z-0"></div>
-  
-       <h1 class="heading-display p-6 md:p-30 self-end relative z-10">{overskrift}</h1>
 
+<section class="relative flex">
+  <!-- Baggrundsbillede -->
+  <Image
+    src={selected.src}
+    alt="Hero billede"
+    class="object-cover w-full md:max-h-138 relative aspect-video "
+    style={`object-position: ${selected.position};`}
+  />
+
+  <!-- Semi-transparent overlay -->
+  <div class="absolute inset-0 bg-background-primary opacity-40 z-0"></div>
+
+  <!-- Overskrift -->
+  <h1 class="heading-display p-6 md:p-30 self-end absolute z-10">
+    {overskrift}
+  </h1>
 </section>
 
+<!-- ---
+import { Image } from 'astro:assets';
+import frivillig from "../../assets/images/forside/stemning_madbod.webp";
+import om from "../../assets/images/forside/pige_arbejder.webp";
+import kontakt from "../../assets/images/kontakt/facade_2.webp";
+
+const { overskrift = "", bgImage = "", image = "" } = Astro.props;
+---
+<section
+  class="relative flex ">
+
+   {(image === "frivillig" && 
+   <Image src={frivillig} alt="Instagram billeder" class="object-cover md:object-[center_90%] w-full relative aspect-video md:max-h-138"  /> )}
+   {(image === "om" && 
+   <Image src={om} alt="Instagram billeder" class="object-cover md:object-[center_90%] w-full relative aspect-video md:max-h-138"  /> )}
+   {(image === "om" && 
+   <Image src={kontakt} alt="Instagram billeder" class="object-cover md:object-[center_90%] w-full relative aspect-video md:max-h-138"  /> )}
+       <div class="absolute inset-0 bg-background-primary opacity-40 z-0"></div>
+  
+       <h1 class="heading-display p-6 md:p-30 self-end absolute z-10">{overskrift}</h1>
+      
+
+</section>
+ -->
