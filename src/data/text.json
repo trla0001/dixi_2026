@@ -1,41 +1,5 @@
 [
   {
-    "id": 0,
-    "layout": "",
-    "imageVariant": "",
-    "textVariant": "",
-    "title": "",
-    "text_1": "",
-    "text_2": "",
-    "show": "true",
-    "cta": "",
-    "href": "",
-    "images": ["/images/1.jpg"]
-  },
-  {
-    "id": 0,
-    "layout": "",
-    "imageVariant": "",
-    "textVariant": "",
-    "title": "",
-    "text_1": "",
-    "text_2": "",
-    "show": "true",
-    "cta": "",
-    "href": "",
-    "images": [
-      "/images/1.jpg",
-      "/images/2.jpg",
-      "/images/3.jpg",
-      "/images/4.jpg"
-    ],
-    "accordion": [
-      { "header": "", "content": "" },
-      { "header": "", "content": "" },
-      { "header": "", "content": "" }
-    ]
-  },
-  {
     "id": 1,
     "layout": "image-left",
     "imageVariant": "single",
@@ -49,7 +13,7 @@
     "target": "_self",
     "images": [
   {
-    "src": "src/assets/images/forside/pige_arbejder.webp",
+    "src": "../assets/images/forside/pige_arbejder.webp",
     "alt": "Frivillig der vender bacon på panden i Dixi Burger madboden"
   }
 ]
@@ -68,19 +32,19 @@
     "target": "_self",
       "images": [
   {
-    "src": "src/assets/images/forside/stemning_madbod.webp",
+    "src": "../assets/images/forside/stemning_madbod.webp",
     "alt": "Frivillig der vender bacon på panden i Dixi Burger madboden"
   },
    {
-    "src": "src/assets/images/forside/pige_samler_burger.webp",
+    "src": "../assets/images/forside/pige_samler_burger.webp",
     "alt": "Frivillig der vender bacon på panden i Dixi Burger madboden"
   },
    {
-    "src": "src/assets/images/forside/boeffer.webp",
+    "src": "../assets/images/forside/boeffer.webp",
     "alt": "Frivillig der vender bacon på panden i Dixi Burger madboden"
   },
    {
-    "src": "src/assets/images/forside/betjening.webp",
+    "src": "../assets/images/forside/betjening.webp",
     "alt": "Frivillig der vender bacon på panden i Dixi Burger madboden"
   }
 ]
@@ -99,7 +63,7 @@
     "href": "",
     "images": [
   {
-    "src": "src/assets/images/omos/facade_2.webp",
+    "src": "../assets/images/omos/facade_2.webp",
     "alt": "Billede af facaden"
   }
 ]
@@ -119,7 +83,7 @@
     "href": "",
      "images": [
   {
-    "src": "src/assets/images/forside/facaden.webp",
+    "src": "../assets/images/forside/facaden.webp",
     "alt": "Billede af facaden forfra"
   }
 ]
@@ -141,19 +105,19 @@
     "target": "_blank",
       "images": [
   {
-    "src": "src/assets/images/omos/kfum_1.webp",
+    "src": "../assets/images/omos/kfum_1.webp",
     "alt": ""
   },
    {
-    "src": "src/assets/images/omos/kfum_2.webp",
+    "src": "../assets/images/omos/kfum_2.webp",
     "alt": ""
   },
    {
-    "src": "src/assets/images/omos/kfum_3.webp",
+    "src": "../assets/images/omos/kfum_3.webp",
     "alt": ""
   },
    {
-    "src": "src/assets/images/omos/kfum_4.webp",
+    "src": "../assets/images/omos/kfum_4.webp",
     "alt": ""
   }
 ]
@@ -173,19 +137,19 @@
     "href": "",
      "images": [
   {
-    "src": "src/assets/images/frivillig/pige_arbejder_2.webp",
+    "src": "../assets/images/frivillig/pige_arbejder_2.webp",
     "alt": "Billede af en frivillig der samler en burger"
   },
    {
-    "src": "src/assets/images/frivillig/bar.webp",
+    "src": "../assets/images/frivillig/bar.webp",
     "alt": "Billede af frivillig baren fra Dixi's bagområde"
   },
    {
-    "src": "src/assets/images/frivillig/intro.webp",
+    "src": "../assets/images/frivillig/intro.webp",
     "alt": "Billede af en frivillig holdleder, der giver en introduktion til arbejdet"
   },
    {
-    "src": "src/assets/images/frivillig/bacon_vendes.webp",
+    "src": "../assets/images/frivillig/bacon_vendes.webp",
     "alt": "Billede af en frivillig der steger bacon"
   }
 ]
@@ -203,7 +167,7 @@
     "href": "",
        "images": [
   {
-    "src": "src/assets/images/frivillig/burger_laves.webp",
+    "src": "../assets/images/frivillig/burger_laves.webp",
     "alt": "Billede af en burger der bliver samlet"
   }
 ],
@@ -239,7 +203,7 @@
     "href": "",
        "images": [
   {
-    "src": "src/assets/images/frivillig/bagomraade.webp",
+    "src": "../assets/images/frivillig/bagomraade.webp",
     "alt": "Stemnings billede fra Dixi's bagområde"
   }
 ],
