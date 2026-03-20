@@ -215,7 +215,15 @@
       "Samle og pakke burgeren",
       "Fyldning af samleborde og løbende opvask"
     ] },
-      { "header": "Service", "text": "Hello" }
+      {
+        "header": "Service",
+        "text": "På serviceholdet er opgaverne alsidige og perfekte for dig, der kan lide afveksling. Du er med til at holde vores bagområde rent, indbydende og velfungerende i tæt samarbejde med Dixi Burger's hygiejnegruppe.",
+        "items": [
+          "Oprydning og opfyldning i bagområdet",
+          "Tømme affald både foran og bagved boden",
+          "Sørge for at vores toiletter er rene"
+        ]
+      }
     ]
   },
   {
@@ -223,9 +231,9 @@
     "layout": "image-left",
     "imageVariant": "single",
     "textVariant": "accordion",
-    "title": "Fordele ved at være frivillig hos os",
-    "text_1": "Som frivillig hos Dixi Burger får du mere end bare en gratis festivalbillet. Du bliver en del af fællesskabet med resten af Dixi-holdet, og en del af den gode stemning i bagområdet. Du får også rig mulighed for at få nye venskaber, og deltage i festivalens mange tilbud med andre frivillige. ",
-    "text_2": "Derudover får du adgang til områder og faciliteter kun for frivillige, hvor du kan spise, slappe af, lade din telefon op.",
+    "title": "Fordele som frivillig",
+    "text_1": "Som frivillig hos Dixi Burger får du mere end bare en gratis festivalbillet. Du bliver en del af fællesskabet med resten af Dixi-holdet, adgang til områder og faciliteter kun for frivillige, hvor du kan spise, slappe af, lade din telefon op.",
+    "text_2": "",
     "show": "true",
     "cta": "",
     "href": "",
@@ -239,7 +247,7 @@
  "accordion": [
    {
      "header": "Dixi's bagområde",
-     "text": "Som frivillig ved Dixi Burger får du selvfølgelig forplejning på alle dine vagter. Du får også et stempelkort til mad og drikke, som du frit kan i løbet af festivalen - også på dage, hvor du ikke har vagt. Derudover får du adgang til vores helt eget Dixi-bagområde, hvor der under hele festivalen tilbydes:",
+     "text": "Som frivillig ved Dixi Burger får du forplejning på alle vagter, og et stempelkort til mad og drikke. Derudover får du adgang til vores helt eget bagområde, hvor der under hele festivalen tilbydes:",
      "items": [
        "Mobilopladning",
        "Rene toiletter",
@@ -253,7 +261,7 @@
    },
    {
      "header": "Roskilde Festival's egne fordele",
-     "text": "Som frivillig på Roskilde Festival, får du mulighed for at opleve en anden side af dét at gå på festival. Udover et partoutarmbånd til Roskilde Festival, tilbydes blandt andet:",
+     "text": "Udover et partoutarmbånd til Roskilde Festival, tilbydes blandt andet:",
      "items": [
        "Adgang til Roskilde Festivals frivilligområde Volunteers’ Village. Her har du bl.a. adgang til gratis wi-fi, kaffe, te, saft og en frivilligbar med DJ’s og bands. ",
        "Trænger du til at lade op, kan du også kigge forbi Volunteer’s Village helt eget wellnessområde, hvor du kan få gratis massage og dyrke yoga. ",
