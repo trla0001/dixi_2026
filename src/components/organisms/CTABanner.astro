@@ -1,8 +1,11 @@
 ---
 import Link from '../../components/atoms/Link.astro';
 ---
-<section class="bg-[url(/src/assets/images/test.png)] bg-cover flex flex-col justify-center items-center  px-6 py-24 md:px-6 md:py-30 lg:px-30 lg:py-50">
- <h1 class="body-base text-text-tertiary pb-6">Har vi fanget din interesse?</h1>
-  <p class="heading-medium text-text-tertiary pb-12 md:pb-20 max-w-210 text-center">Vi lover fællesskab, fede fordele og den bedste festivalstemning</p>
-  <Link variant="ButtonInverted" size="large" href="https://www.kfumfestival.dk/festival/" target="_blank">Tilmeld dig</Link>
+<section class="bg-[url(/src/assets/images/cta_banner.webp)] relative bg-cover bg-top  px-6 py-24 md:px-6 md:py-30 lg:px-30 lg:py-50">
+      <div class="absolute inset-0 bg-background-primary opacity-40 z-0"></div>
+  <div class="relative flex flex-col justify-center items-center">
+   <h1 class="body-base text-text-tertiary pb-6">Har vi fanget din interesse?</h1>
+    <p class="heading-medium text-text-tertiary pb-12 md:pb-20 max-w-210 text-center">Vi lover fællesskab, fede fordele og den bedste festivalstemning</p>
+    <Link variant="ButtonInverted" size="large" href="https://www.kfumfestival.dk/festival/" target="_blank">Tilmeld dig</Link>
+  </div>
 </section>
